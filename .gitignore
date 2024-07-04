@@ -1,3 +1,14 @@
 node_modules
 .DS_Store
 .idea
+# Ignore all .webm files
+*.webm
+
+# Ignore all local image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
