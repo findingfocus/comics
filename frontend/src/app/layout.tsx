@@ -15,7 +15,7 @@ export default function RootLayout(props : RootLayoutProps) {
   const { children } = props
   return (
       <html lang="en" suppressHydrationWarning className="theme-dark">
-      <body className="bg-gradient-to-b from-black to-slate-600 h-screen">{children}</body>
+      <body className="bg-gradient-to-b from-black to-slate-600 min-h-screen h-full">{children}</body>
       </html>
 )
 }

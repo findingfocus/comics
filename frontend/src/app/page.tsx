@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import EmblaCarousel from "./EmblaCarousel";
 import { comicCarousels, Comic } from "@/app/comics";
 
+const LOOP = false
 export default function Home() {
     const [selectedDate, setSelectedDate] = useState<string | null>(null);
     const [selectedCarousel, setSelectedCarousel] = useState<Comic[]>([]);
@@ -38,10 +39,10 @@ export default function Home() {
             <div>
                 {carouselTitle && (
                     <>
-                        <h2 className={"text-2xl font-semibold text-center"}>
+                        <h2 className={"pt-8 text-6xl font-semibold text-center"}>
                             {carouselTitle.split('\n')[0]}
                         </h2>
-                        <p className={"text-xl text-center"}>
+                        <p className={"text-2xl text-center py-4"}>
                             {carouselTitle.split('\n')[1]}
                         </p>
                     </>
@@ -53,14 +54,21 @@ export default function Home() {
                 <h1 className={"mx-8 text-4xl font-bold text-slate-100 py-4"}>
                     Select a date to see comics!
                 </h1>
+
                 <div>
                     {comicCarousels.map((carousel, index) => (
-                        <button key={index} onClick={() => setSelectedDate(carousel.date)}>
-                            {carousel.title}
-                        </button>
+                        <div key={index}>
+                            <button onClick={() => setSelectedDate(carousel.date)}>
+                                <div className={"pt-4 text-2xl font-semibold text-center"}>
+                                    {carousel.date}
+                                </div>
+                            </button>
+                        </div>
                     ))}
                 </div>
             </div>
+
+
         </>
     )
 }
