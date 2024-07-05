@@ -1,30 +1,52 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import EmblaCarousel from "./EmblaCarousel";
-import { comicCarousels, comicList} from "@/app/comics";
+import { comicCarousels, Comic } from "@/app/comics";
 
 export default function Home() {
     const [selectedDate, setSelectedDate] = useState<string | null>(null);
-    // Filter to find the carousel for the selected date
-    const selectedCarousel = comicCarousels.find(carousel => carousel.date === selectedDate);
+    const [selectedCarousel, setSelectedCarousel] = useState<Comic[]>([]);
+    const [randomCarousel, setRandomCarousel] = useState<Comic[]>([]);
+    const [carouselTitle, setCarouselTitle] = useState<string | undefined>(undefined);
 
-    // Select a random comic carousel
-    const randomCarouselIndex = Math.floor(Math.random() * comicCarousels.length);
-    const randomCarousel = comicCarousels[randomCarouselIndex].comics;
 
-    // Select a random comic
-    const randomComicIndex = Math.floor(Math.random() * comicList.length);
-    const randomComic = [comicList[randomComicIndex]]; // Wrap in array for EmblaCarousel
+    // Select a random comic carousel on initial render
+    useEffect(() => {
+        const randomIndex = Math.floor(Math.random() * comicCarousels.length);
+        setRandomCarousel(comicCarousels[randomIndex].comics);
+        setCarouselTitle(`${comicCarousels[randomIndex].title}\n${comicCarousels[randomIndex].date}`);
+    }, []);
+
+    // Update selectedCarousel when selectedDate changes
+    useEffect(() => {
+        if (selectedDate) {
+            const carousel = comicCarousels.find(carousel => carousel.date === selectedDate);
+            if (carousel) {
+                setSelectedCarousel(carousel.comics);
+                setCarouselTitle(`${carousel.title}\n${carousel.date}`);
+            }
+        }
+    }, [selectedDate]);
 
     return (
         <>
-            <div className={"flex flex-col items-center justify-center"}>
-                <h1 className={"mx-8 text-4xl font-bold text-slate-100 py-4"}>
-                    Refresh for random comics!
-                </h1>
-            </div>
-            <div className={""}>
-                <EmblaCarousel slides={randomCarousel}/>
+            {/*<div className={"flex flex-col items-center justify-center"}>*/}
+            {/*    <h1 className={"mx-8 text-4xl font-bold text-slate-100 py-4"}>*/}
+            {/*        Refresh for random comics!*/}
+            {/*    </h1>*/}
+            {/*</div>*/}
+            <div>
+                {carouselTitle && (
+                    <>
+                        <h2 className={"text-2xl font-semibold text-center"}>
+                            {carouselTitle.split('\n')[0]}
+                        </h2>
+                        <p className={"text-xl text-center"}>
+                            {carouselTitle.split('\n')[1]}
+                        </p>
+                    </>
+                )}
+                <EmblaCarousel slides={selectedDate ? selectedCarousel : randomCarousel}/>
             </div>
 
             <div className={"flex flex-col items-center justify-center"}>
@@ -34,13 +56,10 @@ export default function Home() {
                 <div>
                     {comicCarousels.map((carousel, index) => (
                         <button key={index} onClick={() => setSelectedDate(carousel.date)}>
-                            {carousel.date}
+                            {carousel.title}
                         </button>
                     ))}
                 </div>
-            </div>
-            <div>
-                {selectedCarousel && <EmblaCarousel slides={selectedCarousel.comics}/>}
             </div>
         </>
     )

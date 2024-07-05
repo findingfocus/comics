@@ -1,4 +1,4 @@
-interface Comic {
+export interface Comic {
         id: number;
         src: string;
         type?: 'video' | 'image';
@@ -15,7 +15,7 @@ interface ComicCarousel {
 export const comicCarousels: ComicCarousel[] = [
         {
                 id: 1,
-                title: "Carousel 1",
+                title: "EARTH JOKE",
                 date: "2024-01-01",
                 comics: [
                         {id: 1, src: '/video/test.mp4', type: 'video', alt: 'test'},
@@ -26,7 +26,7 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 2,
-                title: "Carousel 2",
+                title: "SPACE JOKE",
                 date: "2024-01-02",
                 comics: [
                         { id: 4, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
