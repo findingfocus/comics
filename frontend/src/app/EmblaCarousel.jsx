@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import {
   PrevButton,
@@ -7,7 +7,6 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
 import useEmblaCarousel from 'embla-carousel-react'
-import {comicList} from "@/app/comics";
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props
@@ -22,6 +21,33 @@ const EmblaCarousel = (props) => {
     onPrevButtonClick,
     onNextButtonClick
   } = usePrevNextButtons(emblaApi)
+
+  const restartVideoOnSelect = () => {
+    const videos = document.querySelectorAll('.embla__slide__video');
+    videos.forEach(video => video.pause());
+
+    const selectedIndex = emblaApi.selectedScrollSnap();
+    const selectedSlide = slides[selectedIndex];
+    if (selectedSlide && selectedSlide.type === 'video') {
+      const video = document.querySelector(`.embla__slide:nth-child(${selectedIndex + 1}) .embla__slide__video`);
+      if (video) {
+        video.currentTime = 0;
+        video.play();
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (emblaApi) {
+      emblaApi.on('select', restartVideoOnSelect);
+    }
+
+    return () => {
+      if (emblaApi) {
+        emblaApi.off('select', restartVideoOnSelect);
+      }
+    };
+  }, [emblaApi, slides]);
 
   return (
     <section className="embla">

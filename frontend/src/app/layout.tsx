@@ -3,8 +3,8 @@ import './globals.css'
 
 
 export const metadata: Metadata = {
-  title: 'Title Goes Here',
-  description: 'description goes here',
+  title: 'Comics!',
+  description: 'Original Art by Paul Thompson',
 }
 
 type RootLayoutProps = {
@@ -15,7 +15,7 @@ export default function RootLayout(props : RootLayoutProps) {
   const { children } = props
   return (
       <html lang="en" suppressHydrationWarning className="theme-dark">
-      <body className="bg-gradient-to-b from-slate-600 to-black h-screen">{children}</body>
+      <body className="bg-gradient-to-b from-black to-slate-600 h-screen">{children}</body>
       </html>
 )
 }
