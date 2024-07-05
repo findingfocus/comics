@@ -56,7 +56,7 @@ const EmblaCarousel = (props) => {
           {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
               {slide.type === 'video' ? (
-                  <video src={slide.src} className="embla__slide__video" autoPlay={true} loop={true} style={{ width: '100%', height: '100%'}}></video>
+                  <video src={slide.src} className="embla__slide__video" autoPlay loop muted playsInline style={{ width: '100%', height: '100%'}}></video>
               ) : (
               <img src={slide.src} alt={slide.alt} className="embla__slide__img"/>
               )}

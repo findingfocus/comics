@@ -1,8 +1,9 @@
 node_modules
 .DS_Store
 .idea
-# Ignore all .webm files
+# Ignore video files
 *.webm
+*.mp4
 
 # Ignore all local image files
 *.jpg
