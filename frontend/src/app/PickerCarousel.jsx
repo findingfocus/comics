@@ -8,7 +8,7 @@ const PickerCarousel = (props) => {
     return (
         <div className="emblaPicker pb-12">
             <IosPickerItem
-                slideCount={comicCarousels.length}
+                slideCount={12}
                 perspective="center"
                 loop={loop}
                 label=""

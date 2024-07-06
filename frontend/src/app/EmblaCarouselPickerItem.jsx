@@ -3,7 +3,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 
 const CIRCLE_DEGREES = 360
 const WHEEL_ITEM_SIZE = 32
-const WHEEL_ITEM_COUNT = 4
+const WHEEL_ITEM_COUNT = 18
 const WHEEL_ITEMS_IN_VIEW = 4
 
 export const WHEEL_ITEM_RADIUS = CIRCLE_DEGREES / WHEEL_ITEM_COUNT

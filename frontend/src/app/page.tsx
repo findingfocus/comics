@@ -41,10 +41,10 @@ export default function Home() {
             <div>
                 {carouselTitle && (
                     <>
-                        <h2 className={"pt-8 text-6xl font-semibold text-center"}>
+                        <h2 className={"pt-4 text-3xl font-semibold text-center"}>
                             {carouselTitle.split('\n')[0]}
                         </h2>
-                        <p className={"text-2xl text-center py-4"}>
+                        <p className={"text-2xl text-center py-3"}>
                             {carouselTitle.split('\n')[1]}
                         </p>
                     </>
@@ -57,17 +57,17 @@ export default function Home() {
                     Select a date to see comics!
                 </h1>
 
-                <div>
-                    {comicCarousels.map((carousel, index) => (
-                        <div key={index}>
-                            <button onClick={() => setSelectedDate(carousel.date)}>
-                                <div className={"pt-4 text-2xl font-semibold text-center"}>
-                                    {carousel.date}
-                                </div>
-                            </button>
-                        </div>
-                    ))}
-                </div>
+                {/*<div>*/}
+                {/*    {comicCarousels.map((carousel, index) => (*/}
+                {/*        <div key={index}>*/}
+                {/*            <button onClick={() => setSelectedDate(carousel.date)}>*/}
+                {/*                <div className={"pt-4 text-2xl font-semibold text-center"}>*/}
+                {/*                    {carousel.date}*/}
+                {/*                </div>*/}
+                {/*            </button>*/}
+                {/*        </div>*/}
+                {/*    ))}*/}
+                {/*</div>*/}
             </div>
 
             <PickerCarousel loop={true} comics={comicCarousels}/>
