@@ -1,16 +1,18 @@
 import React from 'react'
 import { IosPickerItem } from './EmblaCarouselPickerItem'
+import { comicCarousels} from "./comics";
 
 const PickerCarousel = (props) => {
     const { loop } = props
 
     return (
-        <div className="emblaPicker">
+        <div className="emblaPicker pb-12">
             <IosPickerItem
-                slideCount={24}
+                slideCount={comicCarousels.length}
                 perspective="center"
                 loop={loop}
-                label="hours"
+                label=""
+                comics={comicCarousels}
             />
         </div>
     )

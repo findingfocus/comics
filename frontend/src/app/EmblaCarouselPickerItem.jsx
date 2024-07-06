@@ -3,7 +3,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 
 const CIRCLE_DEGREES = 360
 const WHEEL_ITEM_SIZE = 32
-const WHEEL_ITEM_COUNT = 18
+const WHEEL_ITEM_COUNT = 4
 const WHEEL_ITEMS_IN_VIEW = 4
 
 export const WHEEL_ITEM_RADIUS = CIRCLE_DEGREES / WHEEL_ITEM_COUNT
@@ -55,7 +55,7 @@ export const setContainerStyles = (emblaApi, wheelRotation) => {
 }
 
 export const IosPickerItem = (props) => {
-    const { slideCount, perspective, label, loop = false } = props
+    const { slideCount, perspective, label, loop = false, comics} = props
     const [emblaRef, emblaApi] = useEmblaCarousel({
         loop,
         axis: 'y',
@@ -121,9 +121,16 @@ export const IosPickerItem = (props) => {
                     ref={emblaRef}
                 >
                     <div className="embla__ios-picker__container">
-                        {slides.map((_, index) => (
-                            <div className="embla__ios-picker__slide" key={index}>
-                                {index}
+                        {/*{slides.map((_, index) => (*/}
+                        {/*    <div className="embla__ios-picker__slide" key={index}>*/}
+                        {/*        {index}*/}
+                        {/*    </div>*/}
+                        {/*))}*/}
+
+                        {comics.map((comic, index) => (
+                            <div className="embla__ios-picker__slide" key={comic.id}>
+                                <span className="comic-date">{comic.date}</span>
+                                <span className="comic-title">{comic.title}</span>
                             </div>
                         ))}
                     </div>
