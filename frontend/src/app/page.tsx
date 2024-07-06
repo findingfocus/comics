@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import EmblaCarousel from "./EmblaCarousel";
 import { comicCarousels, Comic } from "@/app/comics";
 
+import PickerCarousel from './PickerCarousel'
+
 const LOOP = false
 export default function Home() {
     const [selectedDate, setSelectedDate] = useState<string | null>(null);
@@ -67,6 +69,8 @@ export default function Home() {
                     ))}
                 </div>
             </div>
+
+            <PickerCarousel loop={true} />
 
 
         </>
