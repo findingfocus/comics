@@ -11,16 +11,57 @@ export default function Home() {
     const [selectedCarousel, setSelectedCarousel] = useState<Comic[]>([]);
     const [randomCarousel, setRandomCarousel] = useState<Comic[]>([]);
     const [carouselTitle, setCarouselTitle] = useState<string | undefined>(undefined);
-
+    const [currentCarouselId, setCurrentCarouselId] = useState<number | null>(null)
 
     // Select a random comic carousel on initial render
     useEffect(() => {
         const randomIndex = Math.floor(Math.random() * comicCarousels.length);
+        // Logic to find and display the carousel by ID
+        // This might involve scrolling to the carousel, highlighting it, etc.
         setRandomCarousel(comicCarousels[randomIndex].comics);
         setCarouselTitle(`${comicCarousels[randomIndex].title}\n${comicCarousels[randomIndex].date}`);
+        setCurrentCarouselId(comicCarousels[randomIndex].id);
     }, []);
 
+    function generateComicURL(comicId: string): string {
+        return `${window.location.origin}${window.location.pathname}?comic=${comicId}`;
+    }
 
+    async function copyComicURLToClipboard(comicId: string) {
+        const url = generateComicURL(comicId);
+
+        // First, try using the Clipboard API
+        if (navigator.clipboard && window.isSecureContext) {
+            try {
+                await navigator.clipboard.writeText(url);
+                alert('URL copied to clipboard!');
+                return;
+            } catch (err) {
+                console.error('Failed to copy URL with Clipboard API:', err);
+            }
+        }
+
+        // Fallback method for iOS and other browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = url;
+        textArea.style.position = 'absolute';
+        textArea.style.left = '-9999px'; // Position off-screen
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+
+        try {
+            const successful = document.execCommand('copy');
+            const msg = successful ? 'successful' : 'unsuccessful';
+            console.log('Fallback: Copying text command was ' + msg);
+            alert('URL copied to clipboard!');
+        } catch (err) {
+            console.error('Fallback: Failed to copy URL', err);
+            alert('Failed to copy URL.');
+        }
+
+        document.body.removeChild(textArea);
+    }
 
     useEffect(() => {
         function loadCarouselFromURL() {
@@ -49,6 +90,7 @@ export default function Home() {
             if (carousel) {
                 setSelectedCarousel(carousel.comics);
                 setCarouselTitle(`${carousel.title}\n${carousel.date}`);
+                setCurrentCarouselId(carousel.id);
             }
         }
     }, [selectedDate]);
@@ -74,6 +116,10 @@ export default function Home() {
                 <EmblaCarousel slides={selectedDate ? selectedCarousel : randomCarousel}/>
             </div>
 
+            <button className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded mt-4 mx-auto block"}
+                    onClick={() => currentCarouselId !== null && copyComicURLToClipboard(currentCarouselId.toString())}>Share current comic
+            </button>
+
             <div className={"flex flex-col items-center justify-center"}>
                 <h1 className={"mx-8 text-4xl font-bold text-slate-100 py-4"}>
                     Select a date to see comics!
@@ -92,6 +138,7 @@ export default function Home() {
                 {/*</div>*/}
             </div>
 
+
             <PickerCarousel
                 loop={true}
                 comics={comicCarousels}
@@ -99,7 +146,7 @@ export default function Home() {
                     const [title, date] = titleAndDate.split('\n');
                     setCarouselTitle(titleAndDate)
                     setSelectedDate(date)
-            }}
+                }}
             />
 
         </>
