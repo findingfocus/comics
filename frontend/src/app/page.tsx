@@ -121,8 +121,8 @@ export default function Home() {
             </button>
 
             <div className={"flex flex-col items-center justify-center"}>
-                <h1 className={"mx-8 text-4xl font-bold text-slate-100 py-4"}>
-                    Select a date to see comics!
+                <h1 className={"mx-8 text-4xl font-bold text-slate-100 py-8"}>
+                    Select a comic!
                 </h1>
 
                 {/*<div>*/}
@@ -138,16 +138,17 @@ export default function Home() {
                 {/*</div>*/}
             </div>
 
-
-            <PickerCarousel
-                loop={true}
-                comics={comicCarousels}
-                onSelectComic={(titleAndDate: any) => {
-                    const [title, date] = titleAndDate.split('\n');
-                    setCarouselTitle(titleAndDate)
-                    setSelectedDate(date)
-                }}
-            />
+            <div className={"-translate-y-20"}>
+                <PickerCarousel
+                    loop={true}
+                    comics={comicCarousels}
+                    onSelectComic={(titleAndDate: any) => {
+                        const [title, date] = titleAndDate.split('\n');
+                        setCarouselTitle(titleAndDate)
+                        setSelectedDate(date)
+                    }}
+                />
+            </div>
 
         </>
     )

@@ -25,8 +25,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "SPACE JOKE",
                 date: "2024-01-02",
                 comics: [
-                        { id: 4, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {id: 5, src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
                         // Add more comics specific to this carousel
                 ],
         },
@@ -35,8 +35,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "THIRD JOKE",
                 date: "2024-01-03",
                 comics: [
-                        { id: 6, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {id: 7, src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
                         // Add more comics specific to this carousel
                 ],
         },
@@ -45,8 +45,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "BIG TIME ALBUM",
                 date: "2024-01-04",
                 comics: [
-                        { id: 8, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {id: 9, src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
                         // Add more comics specific to this carousel
                 ],
         },
@@ -55,8 +55,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "ONION JOKE",
                 date: "2024-01-05",
                 comics: [
-                        { id: 4, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {id: 5, src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
                         // Add more comics specific to this carousel
                 ],
         },
@@ -65,8 +65,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "PIZZA JOKE",
                 date: "2024-01-06",
                 comics: [
-                        { id: 4, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {id: 5, src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
                         // Add more comics specific to this carousel
                 ],
         },
@@ -75,8 +75,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "PICKLE JOKE",
                 date: "2024-01-07",
                 comics: [
-                        { id: 4, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {id: 5, src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
                         // Add more comics specific to this carousel
                 ],
         },
@@ -85,8 +85,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "RAT JOKE",
                 date: "2024-01-08",
                 comics: [
-                        { id: 4, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {id: 5, src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
                         // Add more comics specific to this carousel
                 ],
         },
@@ -95,8 +95,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "ET JOKE",
                 date: "2024-01-09",
                 comics: [
-                        { id: 4, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {id: 5, src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
                         // Add more comics specific to this carousel
                 ],
         },
@@ -105,8 +105,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "MONEY JOKE",
                 date: "2024-01-10",
                 comics: [
-                        { id: 4, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {id: 5, src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
                         // Add more comics specific to this carousel
                 ],
         },
@@ -115,8 +115,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "IRON JOKE",
                 date: "2024-01-11",
                 comics: [
-                        { id: 4, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {id: 5, src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
                         // Add more comics specific to this carousel
                 ],
         },
@@ -125,8 +125,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "CAT JOKE",
                 date: "2024-01-12",
                 comics: [
-                        { id: 4, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {id: 5, src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+                        {src: '/video/test.mp4', type: 'video', alt: 'test'},
                         // Add more comics specific to this carousel
                 ],
         },
