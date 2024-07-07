@@ -13,6 +13,7 @@ const PickerCarousel = (props) => {
                 loop={loop}
                 label=""
                 comics={comicCarousels}
+                onSelectComic={props.onSelectComic}
             />
         </div>
     )

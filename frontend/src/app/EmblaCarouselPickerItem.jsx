@@ -113,6 +113,28 @@ export const IosPickerItem = (props) => {
         rotateWheel(emblaApi)
     }, [emblaApi, inactivateEmblaTransform, rotateWheel])
 
+
+    useEffect(() => {
+        const onSelectScroll = () => {
+            const closestIndex = emblaApi.selectedScrollSnap();
+            const focusedComic = comics[closestIndex];
+            if (focusedComic && typeof props.onSelectComic === 'function') {
+                props.onSelectComic(`${focusedComic.title}\n${focusedComic.date}`);
+            }
+        };
+
+        if (emblaApi) {
+            emblaApi.on('scroll', onSelectScroll);
+        }
+
+        return () => {
+            if (emblaApi) {
+                emblaApi.off('scroll', onSelectScroll);
+            }
+        };
+    }, [emblaApi, comics, props.onSelectComic]);
+
+
     return (
         <div className="embla__ios-picker">
             <div className="embla__ios-picker__scene" ref={rootNodeRef}>

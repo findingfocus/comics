@@ -70,8 +70,7 @@ export default function Home() {
                 {/*</div>*/}
             </div>
 
-            <PickerCarousel loop={true} comics={comicCarousels}/>
-
+            <PickerCarousel loop={true} comics={comicCarousels} onSelectComic={(titleAndDate) => setCarouselTitle(titleAndDate)} />
 
         </>
     )
