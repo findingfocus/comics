@@ -20,6 +20,28 @@ export default function Home() {
         setCarouselTitle(`${comicCarousels[randomIndex].title}\n${comicCarousels[randomIndex].date}`);
     }, []);
 
+
+
+    useEffect(() => {
+        function loadCarouselFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const comicId = urlParams.get('comic');
+            if (comicId) {
+                const carousel = comicCarousels.find(c => c.id.toString() === comicId);
+                if (carousel) {
+                    setSelectedCarousel(carousel.comics);
+                    setCarouselTitle(`${carousel.title}\n${carousel.date}`);
+                    setSelectedDate(carousel.date); // This line is crucial if the carousel display is tied to the selectedDate state.
+                }
+            }
+        }
+
+        loadCarouselFromURL();
+        // Since loadCarouselFromURL is defined inside the effect, you don't need to list it as a dependency
+    }, []); // Empty dependency array means this effect runs once on mount
+
+
+
     // Update selectedCarousel when selectedDate changes
     useEffect(() => {
         if (selectedDate) {
