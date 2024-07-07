@@ -27,4 +27,4 @@ jobs:
       - name: Deploy to server
         run: |
          ssh-keyscan -H 143.198.104.71 >> ~/.ssh/known_hosts 
-         scp -r ./dist/* gspfilms@143.198.104.71:/var/www/art/html
+         scp -r ./frontend/.next/* gspfilms@143.198.104.71:/var/www/art/html
