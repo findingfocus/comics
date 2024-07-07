@@ -1,5 +1,4 @@
 export interface Comic {
-        id: number;
         src: string;
         type?: 'video' | 'image';
         alt: string;
@@ -15,13 +14,10 @@ interface ComicCarousel {
 export const comicCarousels: ComicCarousel[] = [
         {
                 id: 1,
-                title: "EARTH JOKE",
-                date: "2024-01-01",
+                title: "SONGBIRD",
+                date: "2020-08-11",
                 comics: [
-                        {id: 1, src: '/video/test.mp4', type: 'video', alt: 'test'},
-                        { id: 2, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', type: 'image', alt: 'Comic 2' },
-                        { id: 3, src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', type: 'image', alt: 'Comic 2' },
-                        // Add more comics specific to this carousel
+                        { src: '/img/2020-08-11_COMIC_SONGBIRD_1of1.webp', type: 'image', alt: 'SONGBIRD - Paul Thompson' },
                 ],
         },
         {
