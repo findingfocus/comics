@@ -119,7 +119,8 @@ export default function Home() {
             </div>
 
             <button className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded mt-4 mx-auto block"}
-                    onClick={() => currentCarouselId !== null && copyComicURLToClipboard(currentCarouselId.toString())}>Share current comic
+                    onClick={() => currentCarouselId !== null && copyComicURLToClipboard(currentCarouselId.toString())}>Share
+                current comic
             </button>
 
             <div className={"flex flex-col items-center justify-center"}>
@@ -139,7 +140,7 @@ export default function Home() {
                     }}
                 />
             </div>
-
+            <footer className={"text-center py-6 -translate-y-4"}>Original art by Paul Thompson<br/><a href={"https://findingfocus.dev"} className={"hover:text-cyan-600"}>findingfocus.dev</a></footer>
         </>
     )
 }
