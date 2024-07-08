@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import {
   PrevButton,
@@ -39,6 +39,7 @@ const EmblaCarousel = (props) => {
 
   useEffect(() => {
     if (emblaApi) {
+      emblaApi.scrollTo(0, false);
       emblaApi.on('select', restartVideoOnSelect);
     }
 
@@ -48,6 +49,20 @@ const EmblaCarousel = (props) => {
       }
     };
   }, [emblaApi, slides]);
+
+  // useEffect(() => {
+  //   if (emblaApi) {
+  //     // Scroll to the first slide without animation
+  //     emblaApi.scrollTo(0, false);
+  //
+  //     // Reset to the first slide on reInit
+  //     const onReInit = () => emblaApi.scrollTo(0, false);
+  //     emblaApi.on('reInit', onReInit);
+  //
+  //     // Cleanup: Remove event listener on component unmount
+  //     return () => emblaApi.off('reInit', onReInit);
+  //   }
+  // }, [emblaApi]);
 
   return (
     <section className="embla">

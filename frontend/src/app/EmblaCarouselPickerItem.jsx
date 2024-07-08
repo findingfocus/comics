@@ -135,11 +135,22 @@ export const IosPickerItem = (props) => {
     }, [emblaApi, comics, props.onSelectComic]);
 
     useEffect(() => {
-        if (!emblaApi || initialIndex === null) return;
+        const urlParams = new URLSearchParams(window.location.search);
+        const comicId = urlParams.get('comic'); // Extract the comicId from the URL
 
-        emblaApi.scrollTo(initialIndex, false); // Scroll to the initial index without animation
-    }, [emblaApi, initialIndex]);
+        let indexToScrollTo = initialIndex; // Default to initialIndex if no comicId is found or if the comicId doesn't match
 
+        if (comicId) {
+            const comicIndex = comics.findIndex(comic => comic.id.toString() === comicId);
+            if (comicIndex !== -1) {
+                indexToScrollTo = comicIndex; // Update indexToScrollTo if a matching comic is found
+            }
+        }
+
+        if (emblaApi && indexToScrollTo !== null) {
+            emblaApi.scrollTo(indexToScrollTo, false); // Scroll to the determined index without animation
+        }
+    }, [emblaApi, comics, initialIndex]);
 
     return (
         <div className="embla__ios-picker">
