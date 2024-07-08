@@ -25,8 +25,8 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "SPACE JOKE",
                 date: "2024-01-02",
                 comics: [
-                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: '/img/test1.webp', alt: 'Comic 1' },
+                        { src: '/img/test2.webp', alt: 'Comic 2' },
                         // Add more comics specific to this carousel
                 ],
         },
@@ -35,8 +35,9 @@ export const comicCarousels: ComicCarousel[] = [
                 title: "THIRD JOKE",
                 date: "2024-01-03",
                 comics: [
-                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: '/img/test3.webp', alt: 'Comic 2' },
+                        { src: '/img/test4.webp', alt: 'Comic 2' },
+
                         // Add more comics specific to this carousel
                 ],
         },

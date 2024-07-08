@@ -55,7 +55,7 @@ export const setContainerStyles = (emblaApi, wheelRotation) => {
 }
 
 export const IosPickerItem = (props) => {
-    const { slideCount, perspective, label, loop = false, comics} = props
+    const { slideCount, perspective, label, loop = false, comics, initialIndex} = props
     const [emblaRef, emblaApi] = useEmblaCarousel({
         loop,
         axis: 'y',
@@ -134,6 +134,12 @@ export const IosPickerItem = (props) => {
         };
     }, [emblaApi, comics, props.onSelectComic]);
 
+    useEffect(() => {
+        if (!emblaApi || initialIndex === null) return;
+
+        emblaApi.scrollTo(initialIndex, false); // Scroll to the initial index without animation
+    }, [emblaApi, initialIndex]);
+
 
     return (
         <div className="embla__ios-picker">
@@ -143,12 +149,6 @@ export const IosPickerItem = (props) => {
                     ref={emblaRef}
                 >
                     <div className="embla__ios-picker__container">
-                        {/*{slides.map((_, index) => (*/}
-                        {/*    <div className="embla__ios-picker__slide" key={index}>*/}
-                        {/*        {index}*/}
-                        {/*    </div>*/}
-                        {/*))}*/}
-
                         {comics.map((comic, index) => (
                             <div className="embla__ios-picker__slide" key={comic.id}>
                                 <span className="comic-date">{comic.date}</span>

@@ -95,6 +95,8 @@ export default function Home() {
         }
     }, [selectedDate]);
 
+
+
     return (
         <>
             {/*<div className={"flex flex-col items-center justify-center"}>*/}
@@ -124,18 +126,6 @@ export default function Home() {
                 <h1 className={"mx-8 text-4xl font-bold text-slate-100 py-8"}>
                     Select a comic!
                 </h1>
-
-                {/*<div>*/}
-                {/*    {comicCarousels.map((carousel, index) => (*/}
-                {/*        <div key={index}>*/}
-                {/*            <button onClick={() => setSelectedDate(carousel.date)}>*/}
-                {/*                <div className={"pt-4 text-2xl font-semibold text-center"}>*/}
-                {/*                    {carousel.date}*/}
-                {/*                </div>*/}
-                {/*            </button>*/}
-                {/*        </div>*/}
-                {/*    ))}*/}
-                {/*</div>*/}
             </div>
 
             <div className={"-translate-y-20"}>
