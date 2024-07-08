@@ -83,7 +83,7 @@ const EmblaCarousel = (props) => {
         </div>
 
         {!isSingleComic && (
-            <div className="embla__controls">
+            <div className="embla__controls px-8">
               <div className="embla__buttons">
                 <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                 <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
