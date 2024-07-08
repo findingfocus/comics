@@ -12,6 +12,8 @@ export default function Home() {
     const [randomCarousel, setRandomCarousel] = useState<Comic[]>([]);
     const [carouselTitle, setCarouselTitle] = useState<string | undefined>(undefined);
     const [currentCarouselId, setCurrentCarouselId] = useState<number | null>(null)
+    const [copyButtonText, setCopyButtonText] = useState<string>('Share current comic'); // Step 1: Button text state
+
 
     // Select a random comic carousel on initial render
     useEffect(() => {
@@ -34,8 +36,10 @@ export default function Home() {
         if (navigator.clipboard && window.isSecureContext) {
             try {
                 await navigator.clipboard.writeText(url);
-                alert('URL copied to clipboard!');
+                setCopyButtonText('Link copied to clipboard!'); // Step 2: Update button text on success
+                setTimeout(() => setCopyButtonText('Share current comic'), 3000); // Step 3: Reset button text after 3 seconds
                 return;
+                // alert('URL copied to clipboard!');
             } catch (err) {
                 console.error('Failed to copy URL with Clipboard API:', err);
             }
@@ -62,6 +66,11 @@ export default function Home() {
 
         document.body.removeChild(textArea);
     }
+
+    useEffect(() => {
+        // Set the button text to its default state when the carousel changes
+        setCopyButtonText('Share current comic');
+    }, [currentCarouselId]);
 
     useEffect(() => {
         function loadCarouselFromURL() {
@@ -118,9 +127,8 @@ export default function Home() {
                 <EmblaCarousel slides={selectedDate ? selectedCarousel : randomCarousel}/>
             </div>
 
-            <button className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded mt-4 mx-auto block"}
-                    onClick={() => currentCarouselId !== null && copyComicURLToClipboard(currentCarouselId.toString())}>Share
-                current comic
+            <button className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded-xl mt-4 mx-auto block"}
+                    onClick={() => currentCarouselId !== null && copyComicURLToClipboard(currentCarouselId.toString())}>{copyButtonText}
             </button>
 
             <div className={"flex flex-col items-center justify-center"}>
