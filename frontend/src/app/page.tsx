@@ -57,7 +57,9 @@ export default function Home() {
             const successful = document.execCommand('copy');
             const msg = successful ? 'successful' : 'unsuccessful';
             console.log('Fallback: Copying text command was ' + msg);
-            alert('URL copied to clipboard!');
+            setCopyButtonText('Link copied to clipboard!'); // Step 2: Update button text on success
+            setTimeout(() => setCopyButtonText('Share current comic'), 3000); // Step 3: Reset button text after 3 seconds
+            // alert('URL copied to clipboard!');
         } catch (err) {
             console.error('Fallback: Failed to copy URL', err);
             alert('Failed to copy URL.');
