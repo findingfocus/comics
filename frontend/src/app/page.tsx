@@ -5,7 +5,6 @@ import { comicCarousels, Comic } from "@/app/comics";
 
 import PickerCarousel from './PickerCarousel'
 
-const LOOP = false
 export default function Home() {
     const [selectedDate, setSelectedDate] = useState<string | null>(null);
     const [selectedCarousel, setSelectedCarousel] = useState<Comic[]>([]);
@@ -63,7 +62,6 @@ export default function Home() {
             console.error('Fallback: Failed to copy URL', err);
             alert('Failed to copy URL.');
         }
-
         document.body.removeChild(textArea);
     }
 
@@ -81,16 +79,13 @@ export default function Home() {
                 if (carousel) {
                     setSelectedCarousel(carousel.comics);
                     setCarouselTitle(`${carousel.title}\n${carousel.date}`);
-                    setSelectedDate(carousel.date); // This line is crucial if the carousel display is tied to the selectedDate state.
+                    setSelectedDate(carousel.date);
                 }
             }
         }
 
         loadCarouselFromURL();
-        // Since loadCarouselFromURL is defined inside the effect, you don't need to list it as a dependency
     }, []); // Empty dependency array means this effect runs once on mount
-
-
 
     // Update selectedCarousel when selectedDate changes
     useEffect(() => {
@@ -104,15 +99,8 @@ export default function Home() {
         }
     }, [selectedDate]);
 
-
-
     return (
         <>
-            {/*<div className={"flex flex-col items-center justify-center"}>*/}
-            {/*    <h1 className={"mx-8 text-4xl font-bold text-slate-100 py-4"}>*/}
-            {/*        Refresh for random comics!*/}
-            {/*    </h1>*/}
-            {/*</div>*/}
             <div>
                 {carouselTitle && (
                     <>
@@ -127,7 +115,7 @@ export default function Home() {
                 <EmblaCarousel slides={selectedDate ? selectedCarousel : randomCarousel}/>
             </div>
 
-            <button className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded-xl mt-4 mx-auto block"}
+            <button className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded-xl mt-6 mx-auto block"}
                     onClick={() => currentCarouselId !== null && copyComicURLToClipboard(currentCarouselId.toString())}>{copyButtonText}
             </button>
 
