@@ -15,30 +15,25 @@ export const comicCarousels: ComicCarousel[] = [
         {
                 id: 1,
                 title: "SONGBIRD",
-                date: "2020-08-11",
+                date: "8-11-20",
                 comics: [
                         { src: '/img/2020-08-11_COMIC_SONGBIRD_1of1.webp', type: 'image', alt: 'SONGBIRD - Paul Thompson' },
                 ],
         },
         {
                 id: 2,
-                title: "SPACE JOKE",
-                date: "2024-01-02",
+                title: "PIGSTY",
+                date: "8-12-20",
                 comics: [
-                        { src: '/img/test1.webp', alt: 'Comic 1' },
-                        { src: '/img/test2.webp', alt: 'Comic 2' },
-                        // Add more comics specific to this carousel
+                        { src: '/img/2020-08-12_COMIC_PIGSTY_1of1.webp', type: 'image', alt: 'PIGSTY - Paul Thompson' },
                 ],
         },
         {
                 id: 3,
-                title: "THIRD JOKE",
-                date: "2024-01-03",
+                title: "GROUCHO",
+                date: "8-13-20",
                 comics: [
-                        { src: '/img/test3.webp', alt: 'Comic 2' },
-                        { src: '/img/test4.webp', alt: 'Comic 2' },
-
-                        // Add more comics specific to this carousel
+                        { src: '/img/2020-08-13_COMIC_GROUCHO_1of1.webp', alt: 'GROUCHO - Paul Thompson' },
                 ],
         },
         {
@@ -48,7 +43,6 @@ export const comicCarousels: ComicCarousel[] = [
                 comics: [
                         { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
                         { src: '/video/test.mp4', type: 'video', alt: 'test'},
-                        // Add more comics specific to this carousel
                 ],
         },
         {
@@ -58,7 +52,6 @@ export const comicCarousels: ComicCarousel[] = [
                 comics: [
                         { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
                         { src: '/video/test.mp4', type: 'video', alt: 'test'},
-                        // Add more comics specific to this carousel
                 ],
         },
         {
@@ -68,7 +61,6 @@ export const comicCarousels: ComicCarousel[] = [
                 comics: [
                         { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
                         { src: '/video/test.mp4', type: 'video', alt: 'test'},
-                        // Add more comics specific to this carousel
                 ],
         },
         {
@@ -78,7 +70,6 @@ export const comicCarousels: ComicCarousel[] = [
                 comics: [
                         { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
                         { src: '/video/test.mp4', type: 'video', alt: 'test'},
-                        // Add more comics specific to this carousel
                 ],
         },
         {
@@ -88,7 +79,6 @@ export const comicCarousels: ComicCarousel[] = [
                 comics: [
                         { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
                         { src: '/video/test.mp4', type: 'video', alt: 'test'},
-                        // Add more comics specific to this carousel
                 ],
         },
         {
@@ -98,7 +88,6 @@ export const comicCarousels: ComicCarousel[] = [
                 comics: [
                         { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
                         { src: '/video/test.mp4', type: 'video', alt: 'test'},
-                        // Add more comics specific to this carousel
                 ],
         },
         {
@@ -108,7 +97,6 @@ export const comicCarousels: ComicCarousel[] = [
                 comics: [
                         { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
                         { src: '/video/test.mp4', type: 'video', alt: 'test'},
-                        // Add more comics specific to this carousel
                 ],
         },
         {
@@ -118,7 +106,6 @@ export const comicCarousels: ComicCarousel[] = [
                 comics: [
                         { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
                         { src: '/video/test.mp4', type: 'video', alt: 'test'},
-                        // Add more comics specific to this carousel
                 ],
         },
         {
@@ -128,10 +115,8 @@ export const comicCarousels: ComicCarousel[] = [
                 comics: [
                         { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
                         {src: '/video/test.mp4', type: 'video', alt: 'test'},
-                        // Add more comics specific to this carousel
                 ],
         },
-        // Add more carousels as needed
 ];
 
 
