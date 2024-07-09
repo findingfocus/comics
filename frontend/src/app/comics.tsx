@@ -38,29 +38,26 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 4,
-                title: "BIG TIME ALBUM",
-                date: "2024-01-04",
+                title: "BEAN THERE",
+                date: "8-14-20",
                 comics: [
-                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: '/img/2020-08-14_COMIC_BEAN-THERE_1of1.webp', alt: 'BEAN THERE - Paul Thompson' },
                 ],
         },
         {
                 id: 5,
-                title: "ONION JOKE",
-                date: "2024-01-05",
+                title: "FASHION SENSE",
+                date: "8-15-20",
                 comics: [
-                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: '/img/2020-08-15_COMIC_FASHION-SENSE_1of1.webp', alt: 'FASHION SENSE - Paul Thompson' },
                 ],
         },
         {
-                id: 6,
-                title: "PIZZA JOKE",
-                date: "2024-01-06",
+                id: 7,
+                title: "GAME THEORY",
+                date: "8-17-20",
                 comics: [
-                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: '/img/2020-08-17_COMIC_GAME-THEORY_1of1.webp', alt: 'GAME THEORY - Paul Thompson' },
                 ],
         },
         {
