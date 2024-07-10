@@ -4,6 +4,7 @@ import EmblaCarousel from "./EmblaCarousel";
 import { comicCarousels, Comic } from "@/app/comics";
 
 import PickerCarousel from './PickerCarousel'
+import debounce from "debounce";
 
 export default function Home() {
     const [selectedDate, setSelectedDate] = useState<string | null>(null);
@@ -13,8 +14,7 @@ export default function Home() {
     const [currentCarouselId, setCurrentCarouselId] = useState<number | null>(null)
     const [copyButtonText, setCopyButtonText] = useState<string>('Share current comic'); // Step 1: Button text state
 
-
-    const updateURLToDefault = () => {
+    const debouncedUpdateURLToDefault = debounce(() => {
         const defaultURL = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
         if (window.location.origin.startsWith('https') || window.location.hostname === 'localhost') {
             try {
@@ -25,14 +25,13 @@ export default function Home() {
         } else {
             console.warn('Operation requires a secure context (HTTPS) or running locally');
         }
-    };
+    }, 500); // 500 milliseconds delay
+
 
 
     // Select a random comic carousel on initial render
     useEffect(() => {
         const randomIndex = Math.floor(Math.random() * comicCarousels.length);
-        // Logic to find and display the carousel by ID
-        // This might involve scrolling to the carousel, highlighting it, etc.
         setRandomCarousel(comicCarousels[randomIndex].comics);
         setCarouselTitle(`${comicCarousels[randomIndex].title}\n${comicCarousels[randomIndex].date}`);
         setCurrentCarouselId(comicCarousels[randomIndex].id);
@@ -45,14 +44,12 @@ export default function Home() {
     async function copyComicURLToClipboard(comicId: string) {
         const url = generateComicURL(comicId);
 
-        // First, try using the Clipboard API
         if (navigator.clipboard && window.isSecureContext) {
             try {
                 await navigator.clipboard.writeText(url);
                 setCopyButtonText('Link copied to clipboard!'); // Step 2: Update button text on success
                 setTimeout(() => setCopyButtonText('Share current comic'), 3000); // Step 3: Reset button text after 3 seconds
                 return;
-                // alert('URL copied to clipboard!');
             } catch (err) {
                 console.error('Failed to copy URL with Clipboard API:', err);
             }
@@ -73,7 +70,6 @@ export default function Home() {
             console.log('Fallback: Copying text command was ' + msg);
             setCopyButtonText('Link copied to clipboard!'); // Step 2: Update button text on success
             setTimeout(() => setCopyButtonText('Share current comic'), 3000); // Step 3: Reset button text after 3 seconds
-            // alert('URL copied to clipboard!');
         } catch (err) {
             console.error('Fallback: Failed to copy URL', err);
             alert('Failed to copy URL.');
@@ -82,7 +78,6 @@ export default function Home() {
     }
 
     useEffect(() => {
-        // Set the button text to its default state when the carousel changes
         setCopyButtonText('Share current comic');
     }, [currentCarouselId]);
 
@@ -99,7 +94,6 @@ export default function Home() {
                 }
             }
         }
-
         loadCarouselFromURL();
     }, []); // Empty dependency array means this effect runs once on mount
 
@@ -149,11 +143,16 @@ export default function Home() {
                         const [title, date] = titleAndDate.split('\n');
                         setCarouselTitle(titleAndDate)
                         setSelectedDate(date)
-                        updateURLToDefault()
+                        debouncedUpdateURLToDefault()
                     }}
                 />
             </div>
-            <footer className={"text-center py-6 -translate-y-4"}>Original art by Paul Thompson<br/><a href={"https://findingfocus.dev"} className={"hover:text-cyan-600"}>findingfocus.dev</a></footer>
+            <button
+                className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded-xl mt-6 mx-auto block -translate-y-12"}>
+                Feeling Lucky?
+            </button>
+            <footer className={"text-center py-6 -translate-y-4"}>Original art by Paul Thompson<br/><a
+                href={"https://findingfocus.dev"} className={"hover:text-cyan-600"}>findingfocus.dev</a></footer>
         </>
     )
 }
