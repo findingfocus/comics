@@ -14,6 +14,20 @@ export default function Home() {
     const [copyButtonText, setCopyButtonText] = useState<string>('Share current comic'); // Step 1: Button text state
 
 
+    const updateURLToDefault = () => {
+        const defaultURL = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+        if (window.location.origin.startsWith('https') || window.location.hostname === 'localhost') {
+            try {
+                window.history.pushState({path: defaultURL}, '', defaultURL);
+            } catch (error) {
+                console.error('Failed to update URL to default:', error);
+            }
+        } else {
+            console.warn('Operation requires a secure context (HTTPS) or running locally');
+        }
+    };
+
+
     // Select a random comic carousel on initial render
     useEffect(() => {
         const randomIndex = Math.floor(Math.random() * comicCarousels.length);
@@ -135,6 +149,7 @@ export default function Home() {
                         const [title, date] = titleAndDate.split('\n');
                         setCarouselTitle(titleAndDate)
                         setSelectedDate(date)
+                        updateURLToDefault()
                     }}
                 />
             </div>

@@ -4,7 +4,7 @@ import './picker.css'
 
 
 export const metadata: Metadata = {
-  title: 'Comics!',
+  title: 'Comics by Paul Thompson',
   description: 'Original Art by Paul Thompson',
 }
 

@@ -53,20 +53,19 @@ export const comicCarousels: ComicCarousel[] = [
                 ],
         },
         {
+                id: 6,
+                title: "GESUNDHEIT",
+                date: "8-16-20",
+                comics: [
+                        { src: '/img/2020-08-16_COMIC_GESUNDHEIT_1of1.webp', alt: 'GESUNDHEIT - Paul Thompson' },
+                ],
+        },
+        {
                 id: 7,
                 title: "GAME THEORY",
                 date: "8-17-20",
                 comics: [
                         { src: '/img/2020-08-17_COMIC_GAME-THEORY_1of1.webp', alt: 'GAME THEORY - Paul Thompson' },
-                ],
-        },
-        {
-                id: 7,
-                title: "PICKLE JOKE",
-                date: "2024-01-07",
-                comics: [
-                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
                 ],
         },
         {
