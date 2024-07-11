@@ -28,7 +28,14 @@ export default function Home() {
         }
     }, 500); // 500 milliseconds delay
 
-
+    useEffect(() => {
+        setTimeout(() => {
+            // Construct the URL without query parameters
+            const urlWithoutParams = window.location.protocol + "//" + window.location.host + window.location.pathname;
+            // Update the URL without reloading the page
+            window.history.pushState({path: urlWithoutParams}, '', urlWithoutParams);
+        }, 500); // Delay time in milliseconds
+    }, []); // Empty dependency array ensures this runs once on component mount
 
         // Select a random comic carousel on initial render
     useEffect(() => {
@@ -121,26 +128,30 @@ export default function Home() {
     }, [selectedDate]);
 
     const handleFeelingLuckyClick = () => {
+        // Select a random comic
         const randomIndex = Math.floor(Math.random() * comicCarousels.length);
         const randomComic = comicCarousels[randomIndex];
+
+        // Update state with selected comic's details
         setSelectedDate(randomComic.date);
         setSelectedCarousel(randomComic.comics);
         setCarouselTitle(`${randomComic.title}\n${randomComic.date}`);
         setCurrentCarouselId(randomComic.id);
 
-        document.querySelector('.picker-container')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
+        // Delay scrolling to the top to avoid conflicts
         setTimeout(() => {
-            if ('scrollBehavior' in document.documentElement.style) { // Checks if the browser supports smooth scroll
+            document.querySelector('.picker-container')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+            if ('scrollBehavior' in document.documentElement.style) {
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'
                 });
-            } else { // Fallback for browsers that do not support smooth scroll
+            } else {
                 window.scrollTo(0, 0);
             }
-        }, 800);
-    }
+        }, 800); // Adjust the delay as needed to fit with other page behaviors
+    };
 
 
     return (
