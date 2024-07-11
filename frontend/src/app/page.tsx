@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import EmblaCarousel from "./EmblaCarousel";
 import { comicCarousels, Comic } from "@/app/comics";
-
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import PickerCarousel from './PickerCarousel'
 import debounce from "debounce";
 
@@ -156,16 +156,22 @@ export default function Home() {
 
     return (
         <>
-            <div>
+            <div className={"mx-auto"}>
                 {carouselTitle && (
-                    <>
-                        <h2 className={"pt-4 text-3xl font-semibold text-center"}>
-                            {carouselTitle.split('\n')[0]}
-                        </h2>
-                        <p className={"text-2xl text-center py-3"}>
-                            {carouselTitle.split('\n')[1]}
-                        </p>
-                    </>
+                    <div className="flex items-center justify-center space-x-4 max-w-xl md:max-w-3xl mx-auto">
+                        <FaAngleLeft className="text-6xl"/>
+
+                        <div className="flex-grow text-center">
+                            <h2 className="text-3xl font-semibold pt-4">
+                                {carouselTitle.split('\n')[0]}
+                            </h2>
+                            <p className="text-2xl py-3">
+                                {carouselTitle.split('\n')[1]}
+                            </p>
+                        </div>
+
+                        <FaAngleRight className="text-6xl"/>
+                    </div>
                 )}
                 <EmblaCarousel slides={selectedDate ? selectedCarousel : randomCarousel}/>
             </div>
