@@ -1,23 +1,30 @@
 import React, {useEffect, useState} from 'react'
 import { IosPickerItem } from './EmblaCarouselPickerItem'
-import { comicCarousels} from "./comics";
+import {ComicCarousel, comicCarousels} from "./comics";
 
-const PickerCarousel = ({ loop, onSelectComic, selectedDate }) => {
-    const [initialComicIndex, setInitialComicIndex] = useState(null);
+interface PickerCarouselProps {
+    loop: boolean;
+    comics: ComicCarousel[];
+    onSelectComic: (titleAndDate: string) => void;
+    selectedDate: string | null;
+}
+
+const PickerCarousel = ({ loop, comics, onSelectComic, selectedDate } : PickerCarouselProps)=> {
+    const [initialComicIndex, setInitialComicIndex] = useState<number | null>(null);
 
     useEffect(() => {
         if (selectedDate) {
-            const index = comicCarousels.findIndex(carousel => carousel.date === selectedDate);
+            const index = comics.findIndex(carousel => carousel.date === selectedDate);
             setInitialComicIndex(index);
         }
-    }, [selectedDate]);
+    }, [selectedDate, comics]);
 
     useEffect(() => {
         // Assuming `comicCarousels` is an array of comics
-        const randomIndex = Math.floor(Math.random() * comicCarousels.length);
+        const randomIndex = Math.floor(Math.random() * comics.length);
         setInitialComicIndex(randomIndex);
         // Set the initial comic based on randomIndex if needed
-    }, []);
+    }, [comics]);
 
     return (
         <div className="emblaPicker pb-12">

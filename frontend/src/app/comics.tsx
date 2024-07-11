@@ -4,7 +4,7 @@ export interface Comic {
         alt: string;
 }
 
-interface ComicCarousel {
+export interface ComicCarousel {
         id: number;
         title?: string;
         comics: Comic[];
