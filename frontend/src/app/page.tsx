@@ -106,6 +106,16 @@ export default function Home() {
                 setSelectedCarousel(carousel.comics);
                 setCarouselTitle(`${carousel.title}\n${carousel.date}`);
                 setCurrentCarouselId(carousel.id);
+                setTimeout(() => {
+                    if ('scrollBehavior' in document.documentElement.style) { // Checks if the browser supports smooth scroll
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    } else { // Fallback for browsers that do not support smooth scroll
+                        window.scrollTo(0, 0);
+                    }
+                }, 800);
             }
         }
     }, [selectedDate]);
@@ -119,6 +129,17 @@ export default function Home() {
         setCurrentCarouselId(randomComic.id);
 
         document.querySelector('.picker-container')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+        setTimeout(() => {
+            if ('scrollBehavior' in document.documentElement.style) { // Checks if the browser supports smooth scroll
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else { // Fallback for browsers that do not support smooth scroll
+                window.scrollTo(0, 0);
+            }
+        }, 800);
     }
 
 
@@ -143,7 +164,7 @@ export default function Home() {
             </button>
 
             <div className={"flex flex-col items-center justify-center"}>
-                <h1 className={"mx-8 text-4xl font-bold text-slate-100 py-8"}>
+                <h1 className={"mx-8 text-4xl font-bold text-slate-100 py-10"}>
                     Select a comic!
                 </h1>
             </div>
@@ -161,13 +182,20 @@ export default function Home() {
                     selectedDate={selectedDate} // Pass selectedDate as a prop
                 />
             </div>
-            <button
-                className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded-xl mt-6 mx-auto block -translate-y-12"}
-                onClick={handleFeelingLuckyClick}>
-                Feeling Lucky?
-            </button>
-            <footer className={"text-center py-6 -translate-y-4"}>Original art by Paul Thompson<br/><a
-                href={"https://findingfocus.dev"} className={"hover:text-cyan-600"}>findingfocus.dev</a></footer>
+            <div className={"-translate-y-8"}>
+                <button
+                    className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded-xl mt-6 mx-auto block -translate-y-12"}
+                    onClick={handleFeelingLuckyClick}>
+                    Feeling Lucky?
+                </button>
+            </div>
+            <footer className={"text-center py-6 -translate-y-4"}>Original art by Paul Thompson<br/>
+                <div className={"flex flex-row justify-center gap-4"}>
+                    <a href={"https://findingfocus.dev"} className={"hover:text-cyan-600"} target="_blank" rel="noreferrer noopener">findingfocus.dev</a>
+                    <a href={"https://findingfocus.xyz"} className={"hover:text-cyan-600"} target="_blank" rel="noreferrer noopener">findingfocus.xyz</a>
+                    <a href={"https://www.github.com/findingfocus"} className={"hover:text-cyan-600"} target="_blank" rel="noreferrer noopener">github</a>
+                </div>
+            </footer>
         </>
     )
 }
