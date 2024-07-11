@@ -21,6 +21,7 @@ export default function Home() {
                 window.history.pushState({path: defaultURL}, '', defaultURL);
             } catch (error) {
                 console.error('Failed to update URL to default:', error);
+
             }
         } else {
             console.warn('Operation requires a secure context (HTTPS) or running locally');
@@ -29,7 +30,7 @@ export default function Home() {
 
 
 
-    // Select a random comic carousel on initial render
+        // Select a random comic carousel on initial render
     useEffect(() => {
         const randomIndex = Math.floor(Math.random() * comicCarousels.length);
         setRandomCarousel(comicCarousels[randomIndex].comics);
@@ -147,7 +148,7 @@ export default function Home() {
                 </h1>
             </div>
 
-            <div className={"-translate-y-20"}>
+            <div className={"-translate-y-10"}>
                 <PickerCarousel
                     loop={true}
                     comics={comicCarousels}

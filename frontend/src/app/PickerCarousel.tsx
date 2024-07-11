@@ -1,9 +1,18 @@
 import React, {useEffect, useState} from 'react'
 import { IosPickerItem } from './EmblaCarouselPickerItem'
 import { comicCarousels} from "./comics";
+import { ComicCarousel } from "./comics";
+interface PickerCarouselProps {
+    loop: boolean;
+    comics: ComicCarousel[];
+    onSelectComic: (titleAndDate: any) => void;
+    selectedDate: string | null;
+}
 
-const PickerCarousel = ({ loop, onSelectComic, selectedDate }) => {
-    const [initialComicIndex, setInitialComicIndex] = useState(null);
+
+const PickerCarousel: React.FC<PickerCarouselProps> = ({ loop, comics, onSelectComic, selectedDate }) => {
+    const [initialComicIndex, setInitialComicIndex] = useState<number | null>(null);
+
 
     useEffect(() => {
         if (selectedDate) {
