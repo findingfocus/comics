@@ -109,6 +109,18 @@ export default function Home() {
         }
     }, [selectedDate]);
 
+    const handleFeelingLuckyClick = () => {
+        const randomIndex = Math.floor(Math.random() * comicCarousels.length);
+        const randomComic = comicCarousels[randomIndex];
+        setSelectedDate(randomComic.date);
+        setSelectedCarousel(randomComic.comics);
+        setCarouselTitle(`${randomComic.title}\n${randomComic.date}`);
+        setCurrentCarouselId(randomComic.id);
+
+        document.querySelector('.picker-container')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+
     return (
         <>
             <div>
@@ -145,10 +157,12 @@ export default function Home() {
                         setSelectedDate(date)
                         debouncedUpdateURLToDefault()
                     }}
+                    selectedDate={selectedDate} // Pass selectedDate as a prop
                 />
             </div>
             <button
-                className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded-xl mt-6 mx-auto block -translate-y-12"}>
+                className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded-xl mt-6 mx-auto block -translate-y-12"}
+                onClick={handleFeelingLuckyClick}>
                 Feeling Lucky?
             </button>
             <footer className={"text-center py-6 -translate-y-4"}>Original art by Paul Thompson<br/><a

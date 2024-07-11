@@ -2,10 +2,15 @@ import React, {useEffect, useState} from 'react'
 import { IosPickerItem } from './EmblaCarouselPickerItem'
 import { comicCarousels} from "./comics";
 
-const PickerCarousel = (props) => {
-    const { loop } = props
-
+const PickerCarousel = ({ loop, onSelectComic, selectedDate }) => {
     const [initialComicIndex, setInitialComicIndex] = useState(null);
+
+    useEffect(() => {
+        if (selectedDate) {
+            const index = comicCarousels.findIndex(carousel => carousel.date === selectedDate);
+            setInitialComicIndex(index);
+        }
+    }, [selectedDate]);
 
     useEffect(() => {
         // Assuming `comicCarousels` is an array of comics
@@ -22,7 +27,7 @@ const PickerCarousel = (props) => {
                 loop={loop}
                 label=""
                 comics={comicCarousels}
-                onSelectComic={props.onSelectComic}
+                onSelectComic={onSelectComic}
                 initialIndex={initialComicIndex} // Pass the initial index to IosPicker
             />
         </div>
