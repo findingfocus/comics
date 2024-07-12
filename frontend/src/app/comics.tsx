@@ -70,50 +70,64 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 8,
-                title: "RAT JOKE",
-                date: "2024-01-08",
+                title: "GYM BUDDY",
+                date: "8-18-20",
                 comics: [
-                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: '/img/2020-08-18_COMIC_GYM-BUDDY_1of1.webp', alt: 'GYM BUDDY - Paul Thompson' },
                 ],
         },
         {
                 id: 9,
-                title: "ET JOKE",
-                date: "2024-01-09",
+                title: "THE TRUTH",
+                date: "8-19-20",
                 comics: [
-                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: '/img/2020-08-19_COMIC_THE-TRUTH_1of1.webp', alt: 'THE TRUTH - Paul Thompson' },
                 ],
         },
         {
                 id: 10,
-                title: "MONEY JOKE",
-                date: "2024-01-10",
+                title: "KICKBALL",
+                date: "8-20-20",
                 comics: [
-                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: '/img/2020-08-20_COMIC_KICKBALL_1of1.webp', alt: 'KICKBALL - Paul Thompson' },
                 ],
         },
         {
                 id: 11,
-                title: "IRON JOKE",
-                date: "2024-01-11",
+                title: "RED ROCKET",
+                date: "8-21-20",
                 comics: [
-                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        { src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: '/img/2020-08-21_COMIC_RED-ROCKET_1of1.webp', alt: 'RED ROCKET - Paul Thompson' },
                 ],
         },
         {
                 id: 12,
-                title: "CAT JOKE",
-                date: "2024-01-12",
+                title: "SENSEI",
+                date: "8-22-20",
                 comics: [
-                        { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
-                        {src: '/video/test.mp4', type: 'video', alt: 'test'},
+                        { src: '/img/2020-08-22_COMIC_SENSEI_1of1.webp', alt: 'SENSEI - Paul Thompson' },
                 ],
         },
-];
+        {
+                id: 13,
+                title: "HYDRATION",
+                date: "8-23-20",
+                comics: [
+                        { src: '/img/2020-08-23_COMIC_HYDRATION_1of1.webp', alt: 'HYDRATION - Paul Thompson' },
+                ],
+        },
+]
+
+
+// {
+//         id: 12,
+//             title: "CAT JOKE",
+//     date: "2024-01-12",
+//     comics: [
+//         { src: 'https://live.staticflickr.com/65535/53833912428_178cdf9a42_k.jpg', alt: 'Comic 1' },
+//         {src: '/video/test.mp4', type: 'video', alt: 'test'},
+// ],
+// },
 
 
 

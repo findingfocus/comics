@@ -1,9 +1,10 @@
 import React, { useEffect, useCallback, useRef } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
+import {comicCarousels} from "@/app/comics";
 
 const CIRCLE_DEGREES = 360
 const WHEEL_ITEM_SIZE = 32
-const WHEEL_ITEM_COUNT = 12
+const WHEEL_ITEM_COUNT = comicCarousels.length
 const WHEEL_ITEMS_IN_VIEW = 4
 
 export const WHEEL_ITEM_RADIUS = CIRCLE_DEGREES / WHEEL_ITEM_COUNT

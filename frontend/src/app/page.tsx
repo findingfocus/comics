@@ -150,7 +150,7 @@ export default function Home() {
             } else {
                 window.scrollTo(0, 0);
             }
-        }, 800); // Adjust the delay as needed to fit with other page behaviors
+        }, 500); // Adjust the delay as needed to fit with other page behaviors
     };
 
 

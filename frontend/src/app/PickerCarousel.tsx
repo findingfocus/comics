@@ -31,7 +31,7 @@ const PickerCarousel: React.FC<PickerCarouselProps> = ({ loop, comics, onSelectC
     return (
         <div className="emblaPicker pb-12">
             <IosPickerItem
-                slideCount={12}
+                slideCount={comicCarousels.length}
                 perspective="center"
                 loop={loop}
                 label=""
