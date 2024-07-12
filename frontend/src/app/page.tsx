@@ -212,7 +212,7 @@ export default function Home() {
             </button>
 
             <div className={"flex flex-col items-center justify-center"}>
-                <h1 className={"mx-8 text-4xl font-bold text-slate-100 py-10"}>
+                <h1 className={"mx-8 text-4xl font-bold text-slate-100 pt-8 pb-16"}>
                     Select a comic!
                 </h1>
             </div>

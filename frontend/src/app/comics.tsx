@@ -116,6 +116,118 @@ export const comicCarousels: ComicCarousel[] = [
                         { src: '/img/2020-08-23_COMIC_HYDRATION_1of1.webp', alt: 'HYDRATION - Paul Thompson' },
                 ],
         },
+        {
+                id: 14,
+                title: "SUPPRESSION",
+                date: "8-24-20",
+                comics: [
+                        { src: '/img/2020-08-24_COMIC_SUPPRESSION_1of1.webp', alt: 'SUPPRESSION - Paul Thompson' },
+                ],
+        },
+        {
+                id: 15,
+                title: "BIGFOOT",
+                date: "8-25-20",
+                comics: [
+                        { src: '/img/2020-08-25_COMIC_BIGFOOT_1of1.webp', alt: 'BIGFOOT - Paul Thompson' },
+                ],
+        },
+        {
+                id: 16,
+                title: "HAIRCUT",
+                date: "8-26-20",
+                comics: [
+                        { src: '/img/2020-08-26_COMIC_HAIRCUT_1of1.webp', alt: 'HAIRCUT - Paul Thompson' },
+                ],
+        },
+        {
+                id: 17,
+                title: "SLOW",
+                date: "8-27-20",
+                comics: [
+                        { src: '/img/2020-08-27_COMIC_SLOW_1of1.webp', alt: 'SLOW - Paul Thompson' },
+                ],
+        },
+        {
+                id: 18,
+                title: "CAMOFLAUGE",
+                date: "8-28-20",
+                comics: [
+                        { src: '/img/2020-08-28_COMIC_CAMOFLAUGE_1of1.webp', alt: 'CAMOFLAUGE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 19,
+                title: "ONE OF US",
+                date: "8-29-20",
+                comics: [
+                        { src: '/img/2020-08-29_COMIC_ONE-OF-US_1of1.webp', alt: 'ONE OF US - Paul Thompson' },
+                ],
+        },
+        {
+                id: 20,
+                title: "JUDGES",
+                date: "8-30-20",
+                comics: [
+                        { src: '/img/2020-08-30_COMIC_JUDGES_1of1.webp', alt: 'JUDGES - Paul Thompson' },
+                ],
+        },
+        {
+                id: 21,
+                title: "JUNGLE KING",
+                date: "8-31-20",
+                comics: [
+                        { src: '/img/2020-08-31_COMIC_JUNGLE-KING_1of1.webp', alt: 'JUNGLE KING - Paul Thompson' },
+                ],
+        },
+        {
+                id: 22,
+                title: "BIG THINKERS",
+                date: "9-1-20",
+                comics: [
+                        { src: '/img/2020-09-01_COMIC_BIG-THINKERS_1of1.webp', alt: 'BIG THINKERS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 23,
+                title: "CONDIMENTS",
+                date: "9-2-20",
+                comics: [
+                        { src: '/img/2020-09-02_COMIC_CONDIMENTS_1of1.webp', alt: 'CONDIMENTS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 24,
+                title: "TIE",
+                date: "9-3-20",
+                comics: [
+                        { src: '/img/2020-09-03_COMIC_TIE_1of1.webp', alt: 'TIE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 25,
+                title: "SOFT BREAD",
+                date: "9-4-20",
+                comics: [
+                        { src: '/img/2020-09-04_COMIC_SOFT-BREAD_1of1.webp', alt: 'SOFT BREAD - Paul Thompson' },
+                ],
+        },
+        {
+                id: 26,
+                title: "STAND TALL",
+                date: "9-5-20",
+                comics: [
+                        { src: '/img/2020-09-05_COMIC_STAND-TALL_1of1.webp', alt: 'STAND TALL - Paul Thompson' },
+                ],
+        },
+        {
+                id: 27,
+                title: "WASH UP",
+                date: "9-6-20",
+                comics: [
+                        { src: '/img/2020-09-06_COMIC_WASH-UP_1of1.webp', alt: 'WASH UP - Paul Thompson' },
+                ],
+        }
 ]
 
 
