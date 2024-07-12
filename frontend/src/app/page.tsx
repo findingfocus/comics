@@ -154,23 +154,54 @@ export default function Home() {
     };
 
 
+    function handlePrevClick() {
+        const currentIndex = comicCarousels.findIndex(carousel => carousel.date === selectedDate);
+        const newIndex = currentIndex - 1 < 0 ? comicCarousels.length - 1 : currentIndex - 1;
+        const newCarousel = comicCarousels[newIndex];
+        setSelectedDate(newCarousel.date);
+        setSelectedCarousel(newCarousel.comics);
+        setCarouselTitle(`${newCarousel.title}\n${newCarousel.date}`);
+        setCurrentCarouselId(newCarousel.id);
+    }
+
+    function handleNextClick() {
+        const currentIndex = comicCarousels.findIndex(carousel => carousel.date === selectedDate);
+        const newIndex = (currentIndex + 1) % comicCarousels.length;
+        const newCarousel = comicCarousels[newIndex];
+        setSelectedDate(newCarousel.date);
+        setSelectedCarousel(newCarousel.comics);
+        setCarouselTitle(`${newCarousel.title}\n${newCarousel.date}`);
+        setCurrentCarouselId(newCarousel.id);
+    }
+
     return (
         <>
             <div className={"mx-auto"}>
                 {carouselTitle && (
                     <div className="flex items-center justify-center space-x-4 max-w-xl md:max-w-3xl mx-auto">
-                        <FaAngleLeft className="text-6xl"/>
-
+                        <button
+                            aria-label="Previous"
+                            className="focus:outline-none"
+                            onClick={handlePrevClick}
+                        >
+                            <FaAngleLeft className="text-6xl"/>
+                        </button>
                         <div className="flex-grow text-center">
                             <h2 className="text-3xl font-semibold pt-4">
-                                {carouselTitle.split('\n')[0]}
+                            {carouselTitle.split('\n')[0]}
                             </h2>
                             <p className="text-2xl py-3">
                                 {carouselTitle.split('\n')[1]}
                             </p>
                         </div>
 
-                        <FaAngleRight className="text-6xl"/>
+                        <button
+                            aria-label="Previous"
+                            className="focus:outline-none"
+                            onClick={handleNextClick}
+                        >
+                            <FaAngleRight className="text-6xl"/>
+                        </button>
                     </div>
                 )}
                 <EmblaCarousel slides={selectedDate ? selectedCarousel : randomCarousel}/>
