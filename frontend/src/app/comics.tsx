@@ -198,10 +198,10 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 24,
-                title: "TIE",
+                title: "TIE-DYE",
                 date: "9-3-20",
                 comics: [
-                        { src: '/img/2020-09-03_COMIC_TIE_1of1.webp', alt: 'TIE - Paul Thompson' },
+                        { src: '/img/2020-09-03_COMIC_TIE-DYE_1of1.webp', alt: 'TIE - Paul Thompson' },
                 ],
         },
         {
@@ -226,6 +226,86 @@ export const comicCarousels: ComicCarousel[] = [
                 date: "9-6-20",
                 comics: [
                         { src: '/img/2020-09-06_COMIC_WASH-UP_1of1.webp', alt: 'WASH UP - Paul Thompson' },
+                ],
+        },
+        {
+                id: 28,
+                title: "INSOLENCE",
+                date: "9-7-20",
+                comics: [
+                        { src: '/img/2020-09-07_COMIC_INSOLENCE_1of1.webp', alt: 'INSOLENCE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 29,
+                title: "EFFORT",
+                date: "9-8-20",
+                comics: [
+                        { src: '/img/2020-09-08_COMIC_EFFORT_1of1.webp', alt: 'EFFORT - Paul Thompson' },
+                ],
+        },
+        {
+                id: 30,
+                title: "FELON",
+                date: "9-9-20",
+                comics: [
+                        { src: '/img/2020-09-09_COMIC_FELON_1of1.webp', alt: 'FELON - Paul Thompson' },
+                ],
+        },
+        {
+                id: 31,
+                title: "BRAINS",
+                date: "9-10-20",
+                comics: [
+                        { src: '/img/2020-09-10_COMIC_BRAINS_1of1.webp', alt: 'BRAINS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 32,
+                title: "TRIGGERS",
+                date: "9-11-20",
+                comics: [
+                        { src: '/img/2020-09-11_COMIC_TRIGGERS_1of1.webp', alt: 'TRIGGERS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 33,
+                title: "THE BEAR",
+                date: "9-12-20",
+                comics: [
+                        { src: '/img/2020-09-12_COMIC_THE-BEAR_1of1.webp', alt: 'THE BEAR - Paul Thompson' },
+                ],
+        },
+        {
+                id: 34,
+                title: "HARD TIMES",
+                date: "9-13-20",
+                comics: [
+                        { src: '/img/2020-09-13_COMIC_HARD-TIMES_1of1.webp', alt: 'HARD TIMES - Paul Thompson' },
+                ],
+        },
+        {
+                id: 35,
+                title: "GO FISH",
+                date: "9-14-20",
+                comics: [
+                        { src: '/img/2020-09-14_COMIC_GO-FISH_1of1.webp', alt: 'GO FISH - Paul Thompson' },
+                ],
+        },
+        {
+                id: 36,
+                title: "FAMILY",
+                date: "9-15-20",
+                comics: [
+                        { src: '/img/2020-09-15_COMIC_FAMILY_1of1.webp', alt: 'FAMILY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 37,
+                title: "BADA-BOOM",
+                date: "9-16-20",
+                comics: [
+                        { src: '/img/2020-09-16_COMIC_BADA-BOOM_1of1.webp', alt: 'BADA-BOOM - Paul Thompson' },
                 ],
         }
 ]
