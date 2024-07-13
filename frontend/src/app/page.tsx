@@ -39,11 +39,27 @@ export default function Home() {
 
         // Select a random comic carousel on initial render
     useEffect(() => {
-        const randomIndex = Math.floor(Math.random() * comicCarousels.length);
-        setRandomCarousel(comicCarousels[randomIndex].comics);
-        setCarouselTitle(`${comicCarousels[randomIndex].title}\n${comicCarousels[randomIndex].date}`);
-        setCurrentCarouselId(comicCarousels[randomIndex].id);
-    }, []);
+        function loadInitialComic() {
+            if (selectedDate) {
+                const carousel = comicCarousels.find(carousel => carousel.date === selectedDate);
+                if (carousel) {
+                    setSelectedCarousel(carousel.comics);
+                    setCarouselTitle(`${carousel.title}\n${carousel.date}`);
+                    setCurrentCarouselId(carousel.id);
+                }
+            } else {
+                // Select a random comic only if selectedDate is not set
+                const randomIndex = Math.floor(Math.random() * comicCarousels.length);
+                const randomComic = comicCarousels[randomIndex];
+                setSelectedDate(randomComic.date);
+                setSelectedCarousel(randomComic.comics);
+                setCarouselTitle(`${randomComic.title}\n${randomComic.date}`);
+                setCurrentCarouselId(randomComic.id);
+            }
+        }
+
+        loadInitialComic();
+    }, []); // The empty dependency array ensures this effect runs once on component mount
 
     function generateComicURL(comicId: string): string {
         return `${window.location.origin}${window.location.pathname}?comic=${comicId}`;
@@ -127,6 +143,7 @@ export default function Home() {
         }
     }, [selectedDate]);
 
+
     const handleFeelingLuckyClick = () => {
         // Select a random comic
         const randomIndex = Math.floor(Math.random() * comicCarousels.length);
@@ -150,7 +167,7 @@ export default function Home() {
             } else {
                 window.scrollTo(0, 0);
             }
-        }, 500); // Adjust the delay as needed to fit with other page behaviors
+        }, 1000);
     };
 
 
