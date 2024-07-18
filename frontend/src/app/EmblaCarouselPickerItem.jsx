@@ -3,9 +3,9 @@ import useEmblaCarousel from 'embla-carousel-react'
 import {comicCarousels} from "@/app/comics";
 
 const CIRCLE_DEGREES = 360
-const WHEEL_ITEM_SIZE = 24
+const WHEEL_ITEM_SIZE = 18
 const WHEEL_ITEM_COUNT = comicCarousels.length
-const WHEEL_ITEMS_IN_VIEW = 5
+const WHEEL_ITEMS_IN_VIEW = 4
 
 export const WHEEL_ITEM_RADIUS = CIRCLE_DEGREES / WHEEL_ITEM_COUNT
 export const IN_VIEW_DEGREES = WHEEL_ITEM_RADIUS * WHEEL_ITEMS_IN_VIEW

@@ -307,7 +307,248 @@ export const comicCarousels: ComicCarousel[] = [
                 comics: [
                         { src: '/img/2020-09-16_COMIC_BADA-BOOM_1of1.webp', alt: 'BADA-BOOM - Paul Thompson' },
                 ],
+        },
+        {
+                id: 38,
+                title: "SPEAK",
+                date: "9-17-20",
+                comics: [
+                        { src: '/img/2020-09-17_COMIC_SPEAK_1of1.webp', alt: 'SPEAK - Paul Thompson' },
+                ],
+        },
+        {
+                id: 39,
+                title: "DUMPSTER",
+                date: "9-18-20",
+                comics: [
+                        { src: '/img/2020-09-18_COMIC_DUMPSTER_1of1.webp', alt: 'DUMPSTER - Paul Thompson' },
+                ],
+        },
+        {
+                id: 40,
+                title: "SOARING",
+                date: "9-19-20",
+                comics: [
+                        { src: '/img/2020-09-19_COMIC_SOARING_1of1.webp', alt: 'SOARING - Paul Thompson' },
+                ],
+        },
+        {
+                id: 41,
+                title: "POOL PARTY",
+                date: "9-20-20",
+                comics: [
+                        { src: '/img/2020-09-20_COMIC_POOL-PARTY_1of1.webp', alt: 'POOL PARTY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 42,
+                title: "TIPPING",
+                date: "9-21-20",
+                comics: [
+                        { src: '/img/2020-09-21_COMIC_TIPPING_1of1.webp', alt: 'TIPPING - Paul Thompson' },
+                ],
+        },
+        {
+                id: 43,
+                title: "IN CASE",
+                date: "9-22-20",
+                comics: [
+                        { src: '/img/2020-09-22_COMIC_IN-CASE_1of1.webp', alt: 'IN CASE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 44,
+                title: "SLEEPING",
+                date: "9-23-20",
+                comics: [
+                        { src: '/img/2020-09-23_COMIC_SLEEPING_1of1.webp', alt: 'SLEEPING - Paul Thompson' },
+                ],
+        },
+        {
+                id: 45,
+                title: "EYE EXAM",
+                date: "9-24-20",
+                comics: [
+                        { src: '/img/2020-09-24_COMIC_EYE-EXAM_1of1.webp', alt: 'EYE EXAM - Paul Thompson' },
+                ],
+        },
+        {
+                id: 46,
+                title: "ROAD RAGE",
+                date: "9-25-20",
+                comics: [
+                        { src: '/img/2020-09-25_COMIC_ROAD-RAGE_1of1.webp', alt: 'ROAD RAGE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 47,
+                title: "BELLIES",
+                date: "9-26-20",
+                comics: [
+                        { src: '/img/2020-09-26_COMIC_BELLIES_1of1.webp', alt: 'BELLIES - Paul Thompson' },
+                ],
+        },
+        {
+                id: 48,
+                title: "COLUMN",
+                date: "9-27-20",
+                comics: [
+                        { src: '/img/2020-09-27_COMIC_COLUMN_1of1.webp', alt: 'COLUMN - Paul Thompson' },
+                ],
+        },
+        {
+                id: 49,
+                title: "SLICED",
+                date: "9-28-20",
+                comics: [
+                        { src: '/img/2020-09-28_COMIC_SLICED_1of1.webp', alt: 'SLICED - Paul Thompson' },
+                ],
+        },
+        {
+                id: 50,
+                title: "MOVING DAY",
+                date: "9-29-20",
+                comics: [
+                        { src: '/img/2020-09-29_COMIC_MOVING-DAY_1of1.webp', alt: 'MOVING DAY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 51,
+                title: "FEEDING",
+                date: "9-30-20",
+                comics: [
+                        { src: '/img/2020-09-30_COMIC_FEEDING_1of1.webp', alt: 'FEEDING - Paul Thompson' },
+                ],
+        },
+        {
+                id: 52,
+                title: "SHATTERED",
+                date: "10-1-20",
+                comics: [
+                        { src: '/img/2020-10-01_COMIC_SHATTERED_1of1.webp', alt: 'SHATTERED - Paul Thompson' },
+                ],
+        },
+        {
+                id: 53,
+                title: "SUPERPOWER",
+                date: "10-2-20",
+                comics: [
+                        { src: '/img/2020-10-02_COMIC_SUPERPOWER_1of1.webp', alt: 'SUPERPOWER - Paul Thompson' },
+                ],
+        },
+        {
+                id: 54,
+                title: "2D",
+                date: "10-3-20",
+                comics: [
+                        { src: '/img/2020-10-03_COMIC_2D_1of1.webp', alt: '2D - Paul Thompson' },
+                ],
+        },
+        {
+                id: 55,
+                title: "HALLOWEEN",
+                date: "10-4-20",
+                comics: [
+                        { src: '/img/2020-10-04_COMIC_HALLOWEEN_1of1.webp', alt: 'HALLOWEEN - Paul Thompson' },
+                ],
+        },
+        {
+                id: 56,
+                title: "IN THE RAIN",
+                date: "10-5-20",
+                comics: [
+                        { src: '/img/2020-10-05_COMIC_IN-THE-RAIN_1of1.webp', alt: 'IN THE RAIN - Paul Thompson' },
+                ],
+        },
+        {
+                id: 57,
+                title: "ROACH",
+                date: "10-6-20",
+                comics: [
+                        { src: '/img/2020-10-06_COMIC_ROACH_1of1.webp', alt: 'ROACH - Paul Thompson' },
+                ],
+        },
+        {
+                id: 58,
+                title: "RUNNING",
+                date: "10-7-20",
+                comics: [
+                        { src: '/img/2020-10-07_COMIC_RUNNING_1of1.webp', alt: 'RUNNING - Paul Thompson' },
+                ],
+        },
+        {
+                id: 59,
+                title: "RECIPE",
+                date: "10-8-20",
+                comics: [
+                        { src: '/img/2020-10-08_COMIC_RECIPE_1of1.webp', alt: 'RECIPE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 60,
+                title: "BOWLING",
+                date: "10-9-20",
+                comics: [
+                        { src: '/img/2020-10-09_COMIC_BOWLING_1of1.webp', alt: 'BOWLING - Paul Thompson' },
+                ],
+        },
+        {
+                id: 61,
+                title: "MAGNIFY",
+                date: "10-10-20",
+                comics: [
+                        { src: '/img/2020-10-10_COMIC_MAGNIFY_1of1.webp', alt: 'MAGNIFY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 62,
+                title: "AS ABOVE",
+                date: "10-11-20",
+                comics: [
+                        { src: '/img/2020-10-11_COMIC_AS-ABOVE_1of1.webp', alt: 'AS ABOVE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 63,
+                title: "LOSING IT",
+                date: "10-12-20",
+                comics: [
+                        { src: '/img/2020-10-12_COMIC_LOSING-IT_1of1.webp', alt: 'LOSING IT - Paul Thompson' },
+                ],
+        },
+        {
+                id: 64,
+                title: "90 DEGREES",
+                date: "10-13-20",
+                comics: [
+                        { src: '/img/2020-10-13_COMIC_90-DEGREES_1of1.webp', alt: '90 DEGREES - Paul Thompson' },
+                ],
+        },
+        {
+                id: 65,
+                title: "SHERLOCK",
+                date: "10-14-20",
+                comics: [
+                        { src: '/img/2020-10-14_COMIC_SHERLOCK_1of1.webp', alt: 'SHERLOCK - Paul Thompson' },
+                ],
+        },
+        {
+                id: 66,
+                title: "ABSTRACTION",
+                date: "10-15-20",
+                comics: [
+                        { src: '/img/2020-10-15_COMIC_ABSTRACTION_1of1.webp', alt: 'ABSTRACTION - Paul Thompson' },
+                ],
+        },
+        {
+                id: 67,
+                title: "OCCUPIED",
+                date: "10-16-20",
+                comics: [
+                        { src: '/img/2020-10-16_COMIC_OCCUPIED_1of1.webp', alt: 'OCCUPIED - Paul Thompson' },
+                ],
         }
+
 ]
 
 
