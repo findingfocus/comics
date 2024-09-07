@@ -1188,7 +1188,7 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 145,
-                title: "OPPORTUNITY COST",
+                title: "RISK",
                 date: "1-3-21",
                 comics: [
                         { src: '/img/2021-01-03_COMIC_OPPORTUNITY-COST_1of1.webp', alt: 'OPPURTUNITY COST - Paul Thompson' },
