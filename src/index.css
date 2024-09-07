@@ -252,6 +252,9 @@ body {
     justify-content: center;
     line-height: 1;
     font-size: 1.8rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: -moz-crisp-edges;
 }
 .embla__ios-picker__scene {
     min-width: 100%;
