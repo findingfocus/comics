@@ -862,10 +862,10 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 106,
-                title: "STAY-SAFE",
+                title: "STAY SAFE",
                 date: "11-25-20",
                 comics: [
-                        { src: '/img/2020-11-25_COMIC_STAY-SAFE_1of1.webp', alt: 'STAY-SAFE - Paul Thompson' },
+                        { src: '/img/2020-11-25_COMIC_STAY-SAFE_1of1.webp', alt: 'STAY SAFE - Paul Thompson' },
                 ],
         },
         {
@@ -878,10 +878,10 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 108,
-                title: "MASK UP",
+                title: "MASKING",
                 date: "11-27-20",
                 comics: [
-                        { src: '/img/2020-11-27_COMIC_MASK-UP_1of1.webp', alt: 'MASK UP - Paul Thompson' },
+                        { src: '/img/2020-11-27_COMIC_MASKING_1of1.webp', alt: 'MASK UP - Paul Thompson' },
                 ],
 
         },
@@ -979,7 +979,7 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 120,
-                title: "HOT-WATER",
+                title: "HOT WATER",
                 date: "12-9-20",
                 comics: [
                         { src: '/img/2020-12-09_COMIC_HOT-WATER_1of2.webp', alt: 'HOT-WATER - Paul Thompson' },
@@ -1364,7 +1364,7 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 166,
-                title: "JUGGLER",
+                title: "IN THE AIR",
                 date: "1-24-21",
                 comics: [
                         { src: '/img/2021-01-24_COMIC_JUGGLER_1of1.webp', alt: 'JUGGLE - Paul Thompson' },
@@ -1632,7 +1632,7 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 198,
-                title: "GO-FISH",
+                title: "GO FISH",
                 date: "2-25-21",
                 comics: [
                         { src: '/img/2021-02-25_COMIC_GO-FISH_1of2.webp', alt: 'GO-FISH - Paul Thompson' },
@@ -1641,7 +1641,7 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 199,
-                title: "ONE-CALL",
+                title: "ONE CALL",
                 date: "2-26-21",
                 comics: [
                         { src: '/img/2021-02-26_COMIC_ONE-CALL_1of1.webp', alt: 'ONE-CALL - Paul Thompson' },
@@ -1970,6 +1970,850 @@ export const comicCarousels: ComicCarousel[] = [
                 date: "4-6-21",
                 comics: [
                         { src: '/img/2021-04-06_COMIC_VENN_1of1.webp', alt: 'VENN - Paul Thompson' },
+                ],
+        },
+        {
+                id: 239,
+                title: "DINNER TIME",
+                date: "4-7-21",
+                comics: [
+                        { src: '/img/2021-04-07_COMIC_DINNER-TIME_1of3.webp', alt: 'DINNER TIME - Paul Thompson' },
+                        { src: '/img/2021-04-07_COMIC_DINNER-TIME_2of3.webp', alt: 'DINNER TIME - Paul Thompson' },
+                        { src: '/img/2021-04-07_COMIC_DINNER-TIME_3of3.webp', alt: 'DINNER TIME - Paul Thompson' },
+                ],
+        },
+        {
+                id: 240,
+                title: "HOME RUN",
+                date: "4-8-21",
+                comics: [
+                        { src: '/img/2021-04-08_COMIC_HOME-RUN_1of2.webp', alt: 'HOME RUN - Paul Thompson' },
+                        { src: '/img/2021-04-08_COMIC_HOME-RUN_2of2.webp', alt: 'HOME RUN - Paul Thompson' },
+                ],
+        },
+        {
+                id: 241,
+                title: "SPIRITS",
+                date: "4-9-21",
+                comics: [
+                        { src: '/img/2021-04-09_COMIC_SPIRITS_1of1.webp', alt: 'SPIRIT - Paul Thompson' },
+                ],
+        },
+        {
+                id: 242,
+                title: "COMPOSER",
+                date: "4-10-21",
+                comics: [
+                        { src: '/img/2021-04-10_COMIC_COMPOSER_1of2.webp', alt: 'COMPOSER - Paul Thompson' },
+                        { src: '/img/2021-04-10_COMIC_COMPOSER_2of2.webp', alt: 'COMPOSER - Paul Thompson' },
+                ],
+        },
+        {
+                id: 243,
+                title: "CRABS",
+                date: "4-11-21",
+                comics: [
+                        { src: '/img/2021-04-11_COMIC_CRABS_1of1.webp', alt: 'CRABS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 244,
+                title: "RARE",
+                date: "4-12-21",
+                comics: [
+                        { src: '/img/2021-04-12_COMIC_RARE_1of2.webp', alt: 'RARE - Paul Thompson' },
+                        { src: '/img/2021-04-12_COMIC_RARE_2of2.webp', alt: 'RARE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 245,
+                title: "TAXI",
+                date: "4-13-21",
+                comics: [
+                        { src: '/img/2021-04-13_COMIC_TAXI_1of2.webp', alt: 'TAXI - Paul Thompson' },
+                        { src: '/img/2021-04-13_COMIC_TAXI_2of2.webp', alt: 'TAXI - Paul Thompson' },
+                ],
+        },
+        {
+                id: 246,
+                title: "STRICT TIME",
+                date: "4-14-21",
+                comics: [
+                        { src: '/img/2021-04-14_COMIC_STRICT-TIME_1of1.webp', alt: 'STRICT TIME - Paul Thompson' },
+                ],
+        },
+        {
+                id: 247,
+                title: "MANUAL",
+                date: "4-15-21",
+                comics: [
+                        { src: '/img/2021-04-15_COMIC_MANUAL_1of2.webp', alt: 'MANUAL - Paul Thompson' },
+                        { src: '/img/2021-04-15_COMIC_MANUAL_2of2.webp', alt: 'MANUAL - Paul Thompson' },
+                ],
+        },
+        {
+                id: 248,
+                title: "BUTTERFLY",
+                date: "4-16-21",
+                comics: [
+                        { src: '/img/2021-04-16_COMIC_BUTTERFLY_1of1.webp', alt: 'BUTTERFLY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 249,
+                title: "DOO KIND",
+                date: "4-17-21",
+                comics: [
+                        { src: '/img/2021-04-17_COMIC_DOO-KIND_1of1.webp', alt: 'DOO KIND - Paul Thompson' },
+                ],
+        },
+        {
+                id: 250,
+                title: "TWONICYCLE",
+                date: "4-18-21",
+                comics: [
+                        { src: '/img/2021-04-18_COMIC_TWONICYCLE_1of1.webp', alt: 'TWONICYCLE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 251,
+                title: "PIDGEON-TOED",
+                date: "4-19-21",
+                comics: [
+                        { src: '/img/2021-04-19_COMIC_PIDGEON-TOED_1of1.webp', alt: 'PIDGEON-TOED - Paul Thompson' },
+                ],
+        },
+        {
+                id: 252,
+                title: "BE PREPARED",
+                date: "4-20-21",
+                comics: [
+                        { src: '/img/2021-04-20_COMIC_BE-PREPARED_1of1.webp', alt: 'BE PREPARED - Paul Thompson' },
+                ],
+        },
+        {
+                id: 253,
+                title: "ACE",
+                date: "4-21-21",
+                comics: [
+                        { src: '/img/2021-04-21_COMIC_ACE_1of1.webp', alt: 'ACE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 254,
+                title: "HOT HEAD",
+                date: "4-22-21",
+                comics: [
+                        { src: '/img/2021-04-22_COMIC_HOT-HEAD_1of1.webp', alt: 'HOT HEAD - Paul Thompson' },
+                ],
+        },
+        {
+                id: 255,
+                title: "HOME STRETCH",
+                date: "4-23-21",
+                comics: [
+                        { src: '/img/2021-04-23_COMIC_HOME-STRETCH_1of1.webp', alt: 'HOME STRETCH - Paul Thompson' },
+                ],
+        },
+        {
+                id: 256,
+                title: "SPEED WALK",
+                date: "4-24-21",
+                comics: [
+                        { src: '/img/2021-04-24_COMIC_SPEED-WALK_1of1.webp', alt: 'SPEED WALK - Paul Thompson' },
+                ],
+        },
+        {
+                id: 257,
+                title: "CRANE KICK",
+                date: "4-25-21",
+                comics: [
+                        { src: '/img/2021-04-25_COMIC_CRANE-KICK_1of2.webp', alt: 'CRANE KICK - Paul Thompson' },
+                        { src: '/video/2021-04-25_COMIC_CRANE-KICK_2of2.mp4', type: 'video', alt: 'CRANE KICK - Paul Thompson' },
+                ],
+        },
+        {
+                id: 258,
+                title: "PRIME TIME",
+                date: "4-26-21",
+                comics: [
+                        { src: '/img/2021-04-26_COMIC_PRIME-TIME_1of1.webp', alt: 'PRIME TIME - Paul Thompson' },
+                ],
+        },
+        {
+                id: 259,
+                title: "SOIL",
+                date: "4-27-21",
+                comics: [
+                        { src: '/img/2021-04-27_COMIC_SOIL_1of1.webp', alt: 'SOIL - Paul Thompson' },
+                ],
+        },
+        {
+                id: 260,
+                title: "8 BITS",
+                date: "4-28-21",
+                comics: [
+                        { src: '/img/2021-04-28_COMIC_8-BITS_1of1.webp', alt: '8 BITS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 261,
+                title: "CLEAN UP",
+                date: "4-29-21",
+                comics: [
+                        { src: '/img/2021-04-29_COMIC_CLEAN-UP_1of3.webp', alt: 'CLEAN UP - Paul Thompson' },
+                        { src: '/img/2021-04-29_COMIC_CLEAN-UP_2of3.webp', alt: 'CLEAN UP - Paul Thompson' },
+                        { src: '/img/2021-04-29_COMIC_CLEAN-UP_3of3.webp', alt: 'CLEAN UP - Paul Thompson' },
+                ],
+        },
+        {
+                id: 262,
+                title: "BREAKFAST",
+                date: "4-30-21",
+                comics: [
+                        { src: '/img/2021-04-30_COMIC_BREAKFAST_1of1.webp', alt: 'BREAKFAST - Paul Thompson' },
+                ],
+        },
+        {
+                id: 263,
+                title: "PICNIC",
+                date: "5-1-21",
+                comics: [
+                        { src: '/img/2021-05-01_COMIC_PICNIC_1of1.webp', alt: 'PICNIC - Paul Thompson' },
+                ],
+        },
+        {
+                id: 264,
+                title: "SMELL THAT?",
+                date: "5-2-21",
+                comics: [
+                        { src: '/img/2021-05-02_COMIC_SMELL-THAT_1of1.webp', alt: 'SMELL THAT? - Paul Thompson' },
+                ],
+        },
+        {
+                id: 265,
+                title: "THEFT",
+                date: "5-3-21",
+                comics: [
+                        { src: '/img/2021-05-03_COMIC_THEFT_1of1.webp', alt: 'THEFT - Paul Thompson' },
+                ],
+        },
+        {
+                id: 266,
+                title: "OWNERS",
+                date: "5-4-21",
+                comics: [
+                        { src: '/img/2021-05-04_COMIC_OWNERS_1of1.webp', alt: 'OWNERS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 267,
+                title: "SHAKE IT UP",
+                date: "5-5-21",
+                comics: [
+                        { src: '/img/2021-05-05_COMIC_SHAKE-IT-UP_1of1.webp', alt: 'SHAKE IT UP - Paul Thompson' },
+                ],
+        },
+        {
+                id: 268,
+                title: "OLD SCHOOL",
+                date: "5-6-21",
+                comics: [
+                        { src: '/img/2021-05-06_COMIC_OLD-SCHOOL_1of2.webp', alt: 'OLD SCHOOL - Paul Thompson' },
+                        { src: '/img/2021-05-06_COMIC_OLD-SCHOOL_2of2.webp', alt: 'OLD SCHOOL - Paul Thompson' },
+                ],
+        },
+        {
+                id: 269,
+                title: "CHEATING",
+                date: "5-7-21",
+                comics: [
+                        { src: '/img/2021-05-07_COMIC_CHEATING_1of1.webp', alt: 'CHEATING - Paul Thompson' },
+                ],
+        },
+        {
+                id: 270,
+                title: "LOUD NOISES",
+                date: "5-8-21",
+                comics: [
+                        { src: '/img/2021-05-08_COMIC_LOUD-NOISES_1of2.webp', alt: 'LOUD NOISES - Paul Thompson' },
+                        { src: '/img/2021-05-08_COMIC_LOUD-NOISES_2of2.webp', alt: 'LOUD NOISES - Paul Thompson' },
+                ],
+        },
+        {
+                id: 271,
+                title: "NOT GUILTY",
+                date: "5-9-21",
+                comics: [
+                        { src: '/img/2021-05-09_COMIC_NOT-GUILTY_1of2.webp', alt: 'NOT GUILTY - Paul Thompson' },
+                        { src: '/img/2021-05-09_COMIC_NOT-GUILTY_2of2.webp', alt: 'NOT GUILTY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 272,
+                title: "PLAQUE",
+                date: "5-10-21",
+                comics: [
+                        { src: '/video/2021-05-10_COMIC_PLAQUE_1of1.mp4', type: 'video', alt: 'PLAQUE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 273,
+                title: "BEDTIME MATH",
+                date: "5-11-21",
+                comics: [
+                        { src: '/video/2021-05-11_COMIC_BEDTIME-MATH_1of1.mp4', type: 'video', alt: 'BEDTIME MATH - Paul Thompson' },
+                ],
+        },
+        {
+                id: 274,
+                title: "MATURITY",
+                date: "5-12-21",
+                comics: [
+                        { src: '/img/2021-05-12_COMIC_MATURITY_1of1.webp', alt: 'MATURITY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 275,
+                title: "NO DIFFERENCE",
+                date: "5-13-21",
+                comics: [
+                        { src: '/img/2021-05-13_COMIC_NO-DIFFERENCE_1of1.webp', alt: 'NO DIFFERENCE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 276,
+                title: "UTENSILS",
+                date: "5-14-21",
+                comics: [
+                        { src: '/img/2021-05-14_COMIC_UTENSILS_1of1.webp', alt: 'UTENSILS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 277,
+                title: "OH SNAP",
+                date: "5-15-21",
+                comics: [
+                        { src: '/video/2021-05-15_COMIC_OH-SNAP_1of1.mp4', type: 'video', alt: 'OH SNAP - Paul Thompson' },
+                ],
+        },
+        {
+                id: 278,
+                title: "LA-LA-LA-LA",
+                date: "5-16-21",
+                comics: [
+                        { src: '/img/2021-05-16_COMIC_LA-LA-LA-LA_1of1.webp', alt: 'LA-LA-LA-LA - Paul Thompson' },
+                ],
+        },
+        {
+                id: 279,
+                title: "STATION WAGON",
+                date: "5-17-21",
+                comics: [
+                        { src: '/img/2021-05-17_COMIC_STATION-WAGON_1of1.webp', alt: 'STATION WAGON - Paul Thompson' },
+                ],
+        },
+        {
+                id: 280,
+                title: "HIGH HORSE",
+                date: "5-18-21",
+                comics: [
+                        { src: '/img/2021-05-18_COMIC_HIGH-HORSE_1of1.webp', alt: 'HIGH HORSE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 281,
+                title: "SNOOZIN",
+                date: "5-19-21",
+                comics: [
+                        { src: '/img/2021-05-19_COMIC_SNOOZIN_1of1.webp', alt: 'SNOOZIN - Paul Thompson' },
+                ],
+        },
+        {
+                id: 282,
+                title: "SLIPPERS",
+                date: "5-20-21",
+                comics: [
+                        { src: '/img/2021-05-20_COMIC_SLIPPERS_1of1.webp', alt: 'SLIPPERS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 283,
+                title: "NEW DRIVER",
+                date: "5-21-21",
+                comics: [
+                        { src: '/img/2021-05-21_COMIC_NEW-DRIVER_1of2.webp', alt: 'NEW DRIVER - Paul Thompson' },
+                        { src: '/img/2021-05-21_COMIC_NEW-DRIVER_2of2.webp', alt: 'NEW DRIVER - Paul Thompson' },
+                ],
+        },
+        {
+                id: 284,
+                title: "HAPPY",
+                date: "5-22-21",
+                comics: [
+                        { src: '/img/2021-05-22_COMIC_HAPPY_1of1.webp', alt: 'HAPPY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 285,
+                title: "BOQUET",
+                date: "5-23-21",
+                comics: [
+                        { src: '/img/2021-05-23_COMIC_BOQUET_1of1.webp', alt: 'BOQUET - Paul Thompson' },
+                ],
+        },
+        {
+                id: 286,
+                title: "GROCERIES",
+                date: "5-24-21",
+                comics: [
+                        { src: '/img/2021-05-24_COMIC_GROCERIES_1of1.webp', alt: 'GROCERIES - Paul Thompson' },
+                ],
+        },
+        {
+                id: 287,
+                title: "GUTS",
+                date: "5-25-21",
+                comics: [
+                        { src: '/img/2021-05-25_COMIC_GUTS_1of1.webp', alt: 'GUTS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 288,
+                title: "COUNTERTOPS",
+                date: "5-26-21",
+                comics: [
+                        { src: '/img/2021-05-26_COMIC_COUNTERTOPS_1of1.webp', alt: 'COUNTERTOPS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 289,
+                title: "PARKING",
+                date: "5-27-21",
+                comics: [
+                        { src: '/img/2021-05-27_COMIC_PARKING_1of2.webp', alt: 'PARKING - Paul Thompson' },
+                        { src: '/img/2021-05-27_COMIC_PARKING_2of2.webp', alt: 'PARKING - Paul Thompson' },
+                ],
+        },
+        {
+                id: 290,
+                title: "SASQUATCH",
+                date: "5-28-21",
+                comics: [
+                        { src: '/img/2021-05-28_COMIC_SASQUATCH_1of1.webp', alt: 'SASQUATCH - Paul Thompson' },
+                ],
+        },
+        {
+                id: 291,
+                title: "SIGNAL",
+                date: "5-29-21",
+                comics: [
+                        { src: '/img/2021-05-29_COMIC_SIGNAL_1of2.webp', alt: 'SIGN - Paul Thompson' },
+                        { src: '/video/2021-05-29_COMIC_SIGNAL_2of2.mp4', type: 'video', alt: 'SIGN - Paul Thompson' },
+                ],
+        },
+        {
+                id: 292,
+                title: "HOPE",
+                date: "5-30-21",
+                comics: [
+                        { src: '/img/2021-05-30_COMIC_HOPE_1of1.webp', alt: 'HOPE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 293,
+                title: "MAY",
+                date: "5-31-21",
+                comics: [
+                        { src: '/img/2021-05-31_COMIC_MAY_1of1.webp', alt: 'MAY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 294,
+                title: "FOOTWEAR",
+                date: "6-1-21",
+                comics: [
+                        { src: '/img/2021-06-01_COMIC_FOOTWEAR_1of1.webp', alt: 'FOOTWEAR - Paul Thompson' },
+                ],
+        },
+        {
+                id: 295,
+                title: "DEFENSE",
+                date: "6-2-21",
+                comics: [
+                        { src: '/img/2021-06-02_COMIC_DEFENSE_1of2.webp', alt: 'DEFENSE - Paul Thompson' },
+                        { src: '/img/2021-06-02_COMIC_DEFENSE_2of2.webp', alt: 'DEFENSE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 296,
+                title: "PANDA",
+                date: "6-3-21",
+                comics: [
+                        { src: '/img/2021-06-03_COMIC_PANDA_1of1.webp', alt: 'PANDA - Paul Thompson' },
+                ],
+        },
+        {
+                id: 297,
+                title: "ROUGH DAY",
+                date: "6-4-21",
+                comics: [
+                        { src: '/img/2021-06-04_COMIC_ROUGH-DAY_1of1.webp', alt: 'ROUGH DAY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 298,
+                title: "OUCH",
+                date: "6-5-21",
+                comics: [
+                        { src: '/img/2021-06-05_COMIC_OUCH_1of1.webp', alt: 'OUCH - Paul Thompson' },
+                ],
+        },
+        {
+                id: 299,
+                title: "CLOUD",
+                date: "6-6-21",
+                comics: [
+                        { src: '/img/2021-06-06_COMIC_CLOUD_1of1.webp', alt: 'CLOUD - Paul Thompson' },
+                ],
+        },
+        {
+                id: 300,
+                title: "UPDATE",
+                date: "6-7-21",
+                comics: [
+                        { src: '/img/2021-06-07_COMIC_UPDATE_1of1.webp', alt: 'UPDATE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 301,
+                title: "PAPERS PLEASE",
+                date: "6-8-21",
+                comics: [
+                        { src: '/img/2021-06-08_COMIC_PAPERS-PLEASE_1of2.webp', alt: 'PAPERS PLEASE - Paul Thompson' },
+                        { src: '/img/2021-06-08_COMIC_PAPERS-PLEASE_2of2.webp', alt: 'PAPERS PLEASE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 302,
+                title: "TEA TIME",
+                date: "6-9-21",
+                comics: [
+                        { src: '/img/2021-06-09_COMIC_TEA-TIME_1of1.webp', alt: 'TEA-TIME - Paul Thompson' },
+                ],
+        },
+        {
+                id: 303,
+                title: "STORY TIME",
+                date: "6-10-21",
+                comics: [
+                        { src: '/img/2021-06-10_COMIC_STORY-TIME_1of1.webp', alt: 'STORY TIME - Paul Thompson' },
+                ],
+        },
+        {
+                id: 304,
+                title: "PLAY DUMB",
+                date: "6-11-21",
+                comics: [
+                        { src: '/img/2021-06-11_COMIC_PLAY-DUMB_1of1.webp', alt: 'PLAY DUMB - Paul Thompson' },
+                ],
+        },
+        {
+                id: 305,
+                title: "BIDET",
+                date: "6-12-21",
+                comics: [
+                        { src: '/img/2021-06-12_COMIC_BIDET_1of1.webp', alt: 'BIDET - Paul Thompson' },
+                ],
+        },
+        {
+                id: 306,
+                title: "PARAKEET",
+                date: "6-13-21",
+                comics: [
+                        { src: '/img/2021-06-13_COMIC_PARAKEET_1of2.webp', alt: 'PARAKEET - Paul Thompson' },
+                        { src: '/img/2021-06-13_COMIC_PARAKEET_2of2.webp', alt: 'PARAKEET - Paul Thompson' },
+                ],
+        },
+        {
+                id: 307,
+                title: "MADNESS",
+                date: "5-30-22",
+                comics: [
+                        { src: '/img/2022-05-30_COMIC_MADNESS_1of1.webp', alt: 'MADNESS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 308,
+                title: "FULL STOMACH",
+                date: "5-31-22",
+                comics: [
+                        { src: '/img/2022-05-31_COMIC_FULL-STOMACH_1of1.webp', alt: 'FULL STOMACH - Paul Thompson' },
+                ],
+        },
+        {
+                id: 309,
+                title: "DEFECTIVE",
+                date: "6-1-22",
+                comics: [
+                        { src: '/img/2022-06-01_COMIC_DEFECTIVE_1of1.webp', alt: 'DEFECTIVE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 310,
+                title: "OPEN DOOR",
+                date: "6-2-22",
+                comics: [
+                        { src: '/img/2022-06-02_COMIC_OPEN-DOOR_1of1.webp', alt: 'OPEN DOOR - Paul Thompson' },
+                ],
+        },
+        {
+                id: 311,
+                title: "MICRO-PHONE",
+                date: "6-3-22",
+                comics: [
+                        { src: '/img/2022-06-03_COMIC_MICRO-PHONE_1of1.webp', alt: 'MICRO-PHONE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 312,
+                title: "NOT FUNNY",
+                date: "6-4-22",
+                comics: [
+                        { src: '/img/2022-06-04_COMIC_NOT-FUNNY_1of1.webp', alt: 'NOT FUNNY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 313,
+                title: "MOB",
+                date: "6-5-22",
+                comics: [
+                        { src: '/img/2022-06-05_COMIC_MOB_1of1.webp', alt: 'MOB - Paul Thompson' },
+                ],
+        },
+        {
+                id: 314,
+                title: "CONE HEAD",
+                date: "6-6-22",
+                comics: [
+                        { src: '/img/2022-06-06_COMIC_CONE-HEAD_1of1.webp', alt: 'CONE HEAD - Paul Thompson' },
+                ],
+        },
+        {
+                id: 315,
+                title: "LEG ROOM",
+                date: "6-7-22",
+                comics: [
+                        { src: '/img/2022-06-07_COMIC_LEG-ROOM_1of1.webp', alt: 'LEG ROOM - Paul Thompson' },
+                ],
+        },
+        {
+                id: 316,
+                title: "BEDSIDE",
+                date: "6-8-22",
+                comics: [
+                        { src: '/img/2022-06-08_COMIC_BEDSIDE_1of1.webp', alt: 'BEDSIDE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 317,
+                title: "MOCKINGBIRD",
+                date: "6-9-22",
+                comics: [
+                        { src: '/video/2022-06-09_COMIC_MOCKINGBIRD_1of1.mp4', type: 'video', alt: 'MOCKINGBIRD - Paul Thompson' },
+                ],
+        },
+        {
+                id: 318,
+                title: "ROUGH WATERS",
+                date: "6-10-22",
+                comics: [
+                        { src: '/img/2022-06-10_COMIC_ROUGH-WATERS_1of1.webp', alt: 'ROUGH WATERS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 319,
+                title: "LIGHTS OUT",
+                date: "6-11-22",
+                comics: [
+                        { src: '/img/2022-06-11_COMIC_LIGHTS-OUT_1of1.webp', alt: 'TROUBLESHOOTING - Paul Thompson' },
+                ],
+        },
+        {
+                id: 320,
+                title: "HOLD HANDS",
+                date: "6-12-22",
+                comics: [
+                        { src: '/img/2022-06-12_COMIC_HOLD-HANDS_1of2.webp', alt: 'HOLD HANDS - Paul Thompson' },
+                        { src: '/img/2022-06-12_COMIC_HOLD-HANDS_2of2.webp', alt: 'HOLD HANDS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 321,
+                title: "CHOPSTICKS",
+                date: "6-13-22",
+                comics: [
+                        { src: '/video/2022-06-13_COMIC_CHOPSTICKS_1of1.mp4', type: 'video', alt: 'CHOPSTICKS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 322,
+                title: "CHEESE",
+                date: "6-14-22",
+                comics: [
+                        { src: '/video/2022-06-14_COMIC_CHEESE_1of1.mp4', type: 'video', alt: 'CHEESE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 323,
+                title: "BABY BOY",
+                date: "6-15-22",
+                comics: [
+                        { src: '/img/2022-06-15_COMIC_BABY-BOY_1of1.webp', alt: 'BABY BOY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 324,
+                title: "HOUSTON",
+                date: "6-16-22",
+                comics: [
+                        { src: '/img/2022-06-16_COMIC_HOUSTON_1of1.webp', alt: 'HOUSTON - Paul Thompson' },
+                ],
+        },
+        {
+                id: 325,
+                title: "TMNT",
+                date: "6-17-22",
+                comics: [
+                        { src: '/img/2022-06-17_COMIC_TMNT_1of1.webp', alt: 'TMNT - Paul Thompson' },
+                ],
+        },
+        {
+                id: 326,
+                title: "PLAY BALL",
+                date: "6-18-22",
+                comics: [
+                        { src: '/img/2022-06-18_COMIC_PLAY-BALL_1of1.webp', alt: 'PLAY BALL - Paul Thompson' },
+                ],
+        },
+        {
+                id: 327,
+                title: "METAMORPHOSIS",
+                date: "6-19-22",
+                comics: [
+                        { src: '/img/2022-06-19_COMIC_METAMORPHOSIS_1of1.webp', alt: 'METAMORPHOSIS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 328,
+                title: "TINY",
+                date: "6-20-22",
+                comics: [
+                        { src: '/img/2022-06-20_COMIC_TINY_1of1.webp', alt: 'TINY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 329,
+                title: "SANDCASTLES",
+                date: "6-21-22",
+                comics: [
+                        { src: '/img/2022-06-21_COMIC_SANDCASTLES_1of1.webp', alt: 'SANDCASTLES - Paul Thompson' },
+                ],
+        },
+        {
+                id: 330,
+                title: "SHORT STOP",
+                date: "6-22-22",
+                comics: [
+                        { src: '/img/2022-06-22_COMIC_SHORT-STOP_1of1.webp', alt: 'SHORT STOP - Paul Thompson' },
+                ],
+        },
+        {
+                id: 331,
+                title: "COMFORT",
+                date: "6-23-22",
+                comics: [
+                        { src: '/img/2022-06-23_COMIC_COMFORT_1of1.webp', alt: 'COMFORT - Paul Thompson' },
+                ],
+        },
+        {
+                id: 332,
+                title: "AYE AYE",
+                date: "6-24-22",
+                comics: [
+                        { src: '/video/2022-06-24_COMIC_AYE-AYE_1of1.mp4', type: 'video', alt: 'AYE AYE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 333,
+                title: "JUMPERS",
+                date: "6-25-22",
+                comics: [
+                        { src: '/video/2022-06-25_COMIC_JUMPERS_1of1.mp4', type: 'video', alt: 'JUMPERS - Paul Thompson' },
+                ],
+        },
+        {
+                id: 334,
+                title: "LULLABY",
+                date: "6-26-22",
+                comics: [
+                        { src: '/video/2022-06-26_COMIC_LULLABY_1of1.mp4', type: 'video', alt: 'LULLABY - Paul Thompson' },
+                ],
+        },
+        {
+                id: 335,
+                title: "TO-DO",
+                date: "6-27-22",
+                comics: [
+                        { src: '/img/2022-06-27_COMIC_TO-DO_1of1.webp', alt: 'TO-DO - Paul Thompson' },
+                ],
+        },
+        {
+                id: 336,
+                title: "CONSUMER",
+                date: "6-28-22",
+                comics: [
+                        { src: '/img/2022-06-28_COMIC_CONSUMER_1of1.webp', alt: 'CONSUMER - Paul Thompson' },
+                ],
+        },
+        {
+                id: 337,
+                title: "PAPER",
+                date: "6-29-22",
+                comics: [
+                        { src: '/video/2022-06-29_COMIC_PAPER_1of1.mp4', type: 'video', alt: 'PAPER - Paul Thompson' },
+                ],
+        },
+        {
+                id: 338,
+                title: "GOALIE",
+                date: "6-30-22",
+                comics: [
+                        { src: '/img/2022-06-30_COMIC_GOALIE_1of1.webp', alt: 'GOALIE - Paul Thompson' },
+                ],
+        },
+        {
+                id: 339,
+                title: "FIRED",
+                date: "7-01-22",
+                comics: [
+                        { src: '/img/2022-07-01_COMIC_FIRED_1of1.webp', alt: 'FIRED - Paul Thompson' },
+                    ],
+        },
+        {
+                id: 340,
+                title: "CRASHING",
+                date: "7-02-22",
+                comics: [
+                        { src: '/img/2022-07-02_COMIC_CRASHING_1of1.webp', alt: 'CRASHING - Paul Thompson' },
+                ],
+        },
+        {
+                id: 341,
+                title: "PEP TALK",
+                date: "7-03-22",
+                comics: [
+                        { src: '/video/2022-07-03_COMIC_PEP-TALK_1of1.mp4', type: 'video', alt: 'PEP TALK - Paul Thompson' },
                 ],
         }
 ]

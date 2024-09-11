@@ -214,6 +214,9 @@ body {
     max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .embla:before,
 .embla:after {
@@ -252,6 +255,7 @@ body {
     justify-content: center;
     line-height: 1;
     font-size: 1.8rem;
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     image-rendering: -moz-crisp-edges;
@@ -304,6 +308,9 @@ body {
     justify-content: center;
     backface-visibility: hidden;
     opacity: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .embla__ios-picker__label {
     font-weight: 700;

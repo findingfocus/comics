@@ -224,7 +224,7 @@ export default function Home() {
                 <EmblaCarousel slides={selectedDate ? selectedCarousel : randomCarousel}/>
             </div>
 
-            <button className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded-xl mt-6 mx-auto block"}
+            <button className={"cursor-pointer bg-slate-700 hover:bg-sky-800 text-white px-4 py-2 rounded-xl mt-6 mx-auto block"}
                     onClick={() => currentCarouselId !== null && copyComicURLToClipboard(currentCarouselId.toString())}>{copyButtonText}
             </button>
 
@@ -249,16 +249,16 @@ export default function Home() {
             </div>
             <div className={"-translate-y-8"}>
                 <button
-                    className={"bg-slate-900 hover:bg-blue-950 text-white px-4 py-2 rounded-xl mt-6 mx-auto block -translate-y-12"}
+                    className={"cursor-pointer bg-slate-700 hover:bg-sky-800 text-white px-4 py-2 rounded-xl mt-6 mx-auto block -translate-y-12"}
                     onClick={handleFeelingLuckyClick}>
                     Feeling Lucky?
                 </button>
             </div>
             <footer className={"text-center py-6 -translate-y-4"}>Original art by Paul Thompson<br/>
                 <div className={"flex flex-row justify-center gap-4"}>
-                    <a href={"https://findingfocus.dev"} className={"hover:text-cyan-600"} target="_blank" rel="noreferrer noopener">findingfocus.dev</a>
-                    <a href={"https://findingfocus.xyz"} className={"hover:text-cyan-600"} target="_blank" rel="noreferrer noopener">findingfocus.xyz</a>
-                    <a href={"https://www.github.com/findingfocus"} className={"hover:text-cyan-600"} target="_blank" rel="noreferrer noopener">github</a>
+                    <a href={"https://findingfocus.dev"} className={"hover:text-cyan-500"} target="_blank" rel="noreferrer noopener">findingfocus.dev</a>
+                    <a href={"https://findingfocus.xyz"} className={"hover:text-cyan-500"} target="_blank" rel="noreferrer noopener">findingfocus.xyz</a>
+                    <a href={"https://www.github.com/findingfocus"} className={"hover:text-cyan-500"} target="_blank" rel="noreferrer noopener">github</a>
                 </div>
             </footer>
         </>
