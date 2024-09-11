@@ -2077,7 +2077,7 @@ export const comicCarousels: ComicCarousel[] = [
         },
         {
                 id: 251,
-                title: "PIDGEON-TOED",
+                title: "PIGEON-TOED",
                 date: "4-19-21",
                 comics: [
                         { src: '/img/2021-04-19_COMIC_PIDGEON-TOED_1of1.webp', alt: 'PIDGEON-TOED - Paul Thompson' },
