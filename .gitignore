@@ -1,11 +1,14 @@
 node_modules
 .DS_Store
 .idea
-# Ignore video files
+.env
+*.env
+.next
+*.next
+
 *.webm
 *.mp4
 
-# Ignore all local image files
 *.jpg
 *.jpeg
 *.png
