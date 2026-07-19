@@ -257,7 +257,7 @@ export default function Home() {
             <footer className={"text-center py-6 -translate-y-4"}>Original art by Paul Thompson<br/>
                 <div className={"flex flex-row justify-center gap-4"}>
                     <a href={"https://findingfocus.dev"} className={"hover:text-cyan-500"} target="_blank" rel="noreferrer noopener">findingfocus.dev</a>
-                    <a href={"https://findingfocus.xyz"} className={"hover:text-cyan-500"} target="_blank" rel="noreferrer noopener">findingfocus.xyz</a>
+                    <a href={"https://findingfocus.gg"} className={"hover:text-cyan-500"} target="_blank" rel="noreferrer noopener">findingfocus.gg</a>
                     <a href={"https://www.github.com/findingfocus"} className={"hover:text-cyan-500"} target="_blank" rel="noreferrer noopener">github</a>
                 </div>
             </footer>
